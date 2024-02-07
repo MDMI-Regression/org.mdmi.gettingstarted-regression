@@ -1,0 +1,29 @@
+
+<project name="transform" default="runCompare" basedir="." xmlns:if="ant:if" xmlns:unless="ant:unless">
+
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties">
+		<classpath>
+			<pathelement location="/usr/share/java/lib/ant-contrib-0.3.jar" />
+		</classpath>
+	</taskdef>
+
+
+
+	<target name="runCompare">
+		<foreach target="compare" param="theFile">
+			<path>
+				<fileset dir="src/test/resources/source/cda" includes="*.xml" />
+			</path>
+		</foreach>
+	</target>
+
+	<target name="compare">
+		<basename property="targetFile" file="${theFile}" suffix=".xml" />
+		<condition property="test01passed" value="true">
+			<filesmatch file1="target/regression/cda/${targetFile}.json" file2="src/test/resources/regression/cda/${targetFile}.json" />
+		</condition>
+		<echo if:set="test01passed">test01 passed</echo>
+		<echo unless:set="test01passed">test01 failed</echo>
+	</target>
+
+</project>

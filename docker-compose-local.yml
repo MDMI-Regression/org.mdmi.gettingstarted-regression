@@ -2,6 +2,7 @@ version: '2'
 services:
   mdmi-gettingstarted:
     image: mdmiservices/transformation:latest
+#    image: mdmiservices/connectathon33
     mem_reservation: 4048m
     container_name: mdmi-gettingstarted
     environment:

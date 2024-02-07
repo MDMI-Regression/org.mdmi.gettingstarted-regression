@@ -49,7 +49,7 @@ import org.springframework.util.MultiValueMap;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class, webEnvironment = WebEnvironment.RANDOM_PORT)
-class TestFHIR2CDA {
+class TestCDA2FHIR {
 
 	@Autowired
 	private TestRestTemplate template;
@@ -85,8 +85,8 @@ class TestFHIR2CDA {
 	}
 
 	@Test
-	public void testFHIR2CDADemographics() throws Exception {
-		Set<String> documents = Stream.of(new File("src/test/resources/source/fhir2cdademographics").listFiles()).filter(
+	public void testFHIR2M2L() throws Exception {
+		Set<String> documents = Stream.of(new File("src/test/nullflavortest").listFiles()).filter(
 			file -> !file.isDirectory()).map(t -> {
 				try {
 					return t.getCanonicalPath();
@@ -96,30 +96,13 @@ class TestFHIR2CDA {
 			}).collect(Collectors.toSet());
 
 		for (String document: documents) {					
-				runTransformation("FHIRR4JSON.MasterBundle", "CDAR2.RC", document,"xml");			 
-		}
-	}
-	
-	 
-	@Test
-	public void testFHIR2CDADemographics2() throws Exception {
-		Set<String> documents = Stream.of(new File("src/test/resources/source/fhir2cdademographics").listFiles()).filter(
-			file -> !file.isDirectory()).map(t -> {
-				try {
-					return t.getCanonicalPath();
-				} catch (IOException e) {
-					return "";
-				}
-			}).collect(Collectors.toSet());
-
-		for (String document: documents) {					
-				runTransformation("FHIRR4JSON.MasterBundle", "CDAR2.ContinuityOfCareDocument", document,"xml");			 
+				runTransformation("FHIRR4JSON.MasterBundle", "CDAR2.ContinuityOfCareDocument", document,"csv");			 
 		}
 	}
 	
 	@Test
-	public void testFHIR2CDADemographicsNoPract() throws Exception {
-		Set<String> documents = Stream.of(new File("src/test/resources/source/fhirnp").listFiles()).filter(
+	public void testCDA2FHIR2() throws Exception {
+		Set<String> documents = Stream.of(new File("src/test/resources/source/cda2").listFiles()).filter(
 			file -> !file.isDirectory()).map(t -> {
 				try {
 					return t.getCanonicalPath();
@@ -129,10 +112,25 @@ class TestFHIR2CDA {
 			}).collect(Collectors.toSet());
 
 		for (String document: documents) {					
-				runTransformation("FHIRR4JSON.MasterBundle", "CDAR2.ContinuityOfCareDocument", document,"xml");			 
+				runTransformation( "CDAR2.ContinuityOfCareDocument","FHIRR4JSON.MasterBundle", document,"json");			 
 		}
 	}
- 
+	
+	@Test
+	public void testCDA2FHIR() throws Exception {
+		Set<String> documents = Stream.of(new File("src/test/problemstatus").listFiles()).filter(
+			file -> !file.isDirectory()).map(t -> {
+				try {
+					return t.getCanonicalPath();
+				} catch (IOException e) {
+					return "";
+				}
+			}).collect(Collectors.toSet());
+
+		for (String document: documents) {					
+				runTransformation( "CDAR2.ContinuityOfCareDocument","FHIRR4JSON.MasterBundle", document,"csv");			 
+		}
+	}
  
 
 }

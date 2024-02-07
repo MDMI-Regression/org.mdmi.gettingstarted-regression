@@ -1,0 +1,99 @@
+
+<project name="transform" default="runRegression" basedir="." xmlns:if="ant:if" xmlns:unless="ant:unless">
+
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties">
+		<classpath>
+			<pathelement location="/usr/share/java/lib/ant-contrib-0.3.jar" />
+		</classpath>
+	</taskdef>
+
+	<target name="runRegression">
+
+		<exec executable="docker">
+			<arg value="compose" />
+
+			<arg value="-f" />
+			<arg value="docker-compose-local.yml" />
+
+			<arg value="up" />
+			<arg value="-d" />			
+		</exec>
+
+	<echo>
+	Start Sleep
+	</echo>
+		
+		<sleep seconds="20" />
+	
+		<echo>
+			Done Sleep
+			</echo>	
+	 
+		<exec executable="curl">
+			<arg line="--location 'http://localhost:8282/mdmi/transformation'  " />
+			<arg line="--max-time 60  " />
+		</exec>
+
+		<foreach target="runTransformation" param="theFile">
+			<path>
+				<fileset dir="src/test/resources/source/cda" includes="*.xml" />
+			</path>
+		</foreach>
+
+
+		 <exec executable="docker">
+			<arg value="compose" />
+
+			<arg value="-f" />
+			<arg value="docker-compose-local.yml" />
+
+			<arg value="down" />
+		</exec>  
+	</target>
+
+
+	<target name="runTransformation">
+
+		<mkdir dir="target/regression/cda" />
+
+		<echo message="Transform ${theFile}" />
+		<basename property="targetFile" file="${theFile}" suffix=".xml" />
+
+
+		<exec executable="curl">
+			<arg line="--location 'http://localhost:8282/mdmi/transformation' " />
+			<arg line="--form 'message=@${theFile}'" />
+			<arg line="--form 'source=CDAR2.ContinuityOfCareDocument'" />
+			<arg line="--form 'target=FHIRR4JSON.MasterBundle'" />
+			<arg line="-o target/regression/cda/${targetFile}.json" />
+		</exec>
+
+
+
+		<condition property="test01passed" value="true">
+			<filesmatch file1="target/regression/cda/${targetFile}.json" file2="src/test/resources/regression/cda/${targetFile}.json" />
+		</condition>
+		<echo if:set="test01passed">test01 passed</echo>
+		<echo unless:set="test01passed">test01 failed</echo>
+
+	</target>
+	
+	
+	<target name="runCompare">
+		<foreach target="runTransformation" param="compare">
+			<path>
+				<fileset dir="src/test/resources/source/cda" includes="*.xml" />
+			</path>
+		</foreach>
+	</target>
+	
+	<target name="compare">
+			<basename property="targetFile" file="${theFile}" suffix=".xml" />
+			<condition property="test01passed" value="true">
+				<filesmatch file1="target/regression/cda/${targetFile}.json" file2="src/test/resources/regression/cda/${targetFile}.json" />
+			</condition>
+			<echo if:set="test01passed">test01 passed</echo>
+			<echo unless:set="test01passed">test01 failed</echo>
+		</target>
+
+</project>

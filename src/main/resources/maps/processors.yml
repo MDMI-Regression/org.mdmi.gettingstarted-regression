@@ -16,6 +16,8 @@ postprocessors:
        class: org.mdmi.processors.fhir.FHIRR4PostProcessorJson
        groups:
          - FHIRR4JSON
+       arguments:
+          uniqueIds: false
     cda:
        name: CDAPostProcessor
        class: org.mdmi.processors.cda.CDAPostProcessor

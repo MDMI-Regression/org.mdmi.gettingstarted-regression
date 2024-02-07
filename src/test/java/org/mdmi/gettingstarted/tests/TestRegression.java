@@ -13,20 +13,19 @@ package org.mdmi.gettingstarted.tests;
 
 
 import static org.junit.Assert.assertTrue;
-import static org.junit.jupiter.api.Assertions.fail;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Collection;
-import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.io.IOUtils;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -49,7 +48,7 @@ import org.springframework.util.MultiValueMap;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class, webEnvironment = WebEnvironment.RANDOM_PORT)
-class TestFHIR2CDA {
+class TestRegression {
 
 	@Autowired
 	private TestRestTemplate template;
@@ -59,7 +58,7 @@ class TestFHIR2CDA {
 		System.setProperty("mdmi.maps", "src/main/resources/maps");
 	}
 
-	private String runTransformation(String source, String target, String message,String extension) throws Exception {
+	private void runTransformation(String source, String target, String regression,String message,String extension) throws Exception {
 		MultiValueMap<String, Object> map = new LinkedMultiValueMap<>();
 		map.add("source", source);
 		map.add("target", target);
@@ -70,69 +69,52 @@ class TestFHIR2CDA {
 		Path sourcePath = Paths.get(message);
 		String testName = FilenameUtils.removeExtension(sourcePath.getFileName().toString());
 
-		Path testPath = Paths.get("target/test-output/" + testName);
+		Path testPath = Paths.get("target/regression/" + regression);
 		if (!Files.exists(testPath)) {
 			Files.createDirectories(testPath);
 		}
 
-		Path path = Paths.get("target/test-output/" + testName + "/" + testName + "." +extension);
+		Path path = Paths.get("target/regression/" + regression + "/" + testName + "." +extension);
 		byte[] strToBytes = response.getBody().getBytes();
 
 		Files.write(path, strToBytes);
-
-		// System.out.println(response.getBody());
-		return response.getBody();
+		
 	}
 
-	@Test
-	public void testFHIR2CDADemographics() throws Exception {
-		Set<String> documents = Stream.of(new File("src/test/resources/source/fhir2cdademographics").listFiles()).filter(
-			file -> !file.isDirectory()).map(t -> {
-				try {
-					return t.getCanonicalPath();
-				} catch (IOException e) {
-					return "";
-				}
-			}).collect(Collectors.toSet());
-
-		for (String document: documents) {					
-				runTransformation("FHIRR4JSON.MasterBundle", "CDAR2.RC", document,"xml");			 
-		}
-	}
-	
-	 
-	@Test
-	public void testFHIR2CDADemographics2() throws Exception {
-		Set<String> documents = Stream.of(new File("src/test/resources/source/fhir2cdademographics").listFiles()).filter(
-			file -> !file.isDirectory()).map(t -> {
-				try {
-					return t.getCanonicalPath();
-				} catch (IOException e) {
-					return "";
-				}
-			}).collect(Collectors.toSet());
-
-		for (String document: documents) {					
-				runTransformation("FHIRR4JSON.MasterBundle", "CDAR2.ContinuityOfCareDocument", document,"xml");			 
-		}
-	}
-	
-	@Test
-	public void testFHIR2CDADemographicsNoPract() throws Exception {
-		Set<String> documents = Stream.of(new File("src/test/resources/source/fhirnp").listFiles()).filter(
-			file -> !file.isDirectory()).map(t -> {
-				try {
-					return t.getCanonicalPath();
-				} catch (IOException e) {
-					return "";
-				}
-			}).collect(Collectors.toSet());
-
-		for (String document: documents) {					
-				runTransformation("FHIRR4JSON.MasterBundle", "CDAR2.ContinuityOfCareDocument", document,"xml");			 
-		}
-	}
  
+	
+ 
+	@Test
+	public void testRegerssionCDA2FHIR() throws Exception {
+		Set<String> documents = Stream.of(new File("src/test/resources/source/cda").listFiles()).filter(
+			file -> !file.isDirectory()).map(t -> {
+				try {
+					return t.getCanonicalPath();
+				} catch (IOException e) {
+					return "";
+				}
+			}).collect(Collectors.toSet());
+
+		for (String document: documents) {			
+		runTransformation( "CDAR2.ContinuityOfCareDocument","FHIRR4JSON.MasterBundle","cda", document,"json");				
+		}
+	}
+	
+	@Test
+	public void testRegerssionFHIR2CDA() throws Exception {
+		Set<String> documents = Stream.of(new File("src/test/resources/source/fhir").listFiles()).filter(
+			file -> !file.isDirectory()).map(t -> {
+				try {
+					return t.getCanonicalPath();
+				} catch (IOException e) {
+					return "";
+				}
+			}).collect(Collectors.toSet());
+
+		for (String document: documents) {			
+		runTransformation( "FHIRR4JSON.MasterBundle","CDAR2.ContinuityOfCareDocument","fhir", document,"xml");				
+		}
+	}
  
 
 }

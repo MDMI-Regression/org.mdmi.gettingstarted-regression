@@ -1,0 +1,54 @@
+{
+	"resourceType": "Bundle",
+	"id": "a495e112-d36f-49af-87a0-ba89456ed7a3",
+	"meta": {
+		"lastUpdated": "2024-01-18T20:54:54.961+00:00"
+	},
+	"type": "transaction",
+	"total": 1,
+	"link": [
+		{
+			"relation": "self",
+			"url": "https://hapi.fhir.org/baseR5/Patient/95956/$everything"
+		}
+	],
+	"entry": [
+		{
+			"fullUrl": "Patient/95956",
+			"resource": {
+				"resourceType": "Patient",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-11-28T20:49:17.648+00:00",
+					"source": "#RlEmCljk3nNm2PQy"
+				},
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Ms. Tianna156 <b>KUPHAL267 </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>999-89-6289</td></tr><tr><td>Date of birth</td><td><span>24 September 1996</span></td></tr></tbody></table></div>"
+				},
+				"identifier": {
+					"system": "https://hapi.fhir.org/baseR5",
+					"value": "95956"
+				},
+				"name": [
+					{
+						"family": "Kuphal267",
+						"given": [
+							"Tianna156"
+						],
+						"prefix": [
+							"Ms."
+						]
+					}
+				],
+				"gender": "female",
+				"birthDate": "1996-09-24"
+			},
+			"request": {
+				"method": "POST",
+				"url": "Patient",
+				"ifNoneExist": "Patient?identifier=https://hapi.fhir.org/baseR5|95956"
+			}
+		}
+	]
+}
