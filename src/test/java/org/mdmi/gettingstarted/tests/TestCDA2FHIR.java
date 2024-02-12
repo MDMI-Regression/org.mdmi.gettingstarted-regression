@@ -131,6 +131,23 @@ class TestCDA2FHIR {
 				runTransformation( "CDAR2.ContinuityOfCareDocument","FHIRR4JSON.MasterBundle", document,"csv");			 
 		}
 	}
+	
+	@Test
+	public void testMedicationAdministration() throws Exception {
+		Set<String> documents = Stream.of(new File("src/test/resources/source/MedicaationAdministration").listFiles()).filter(
+			file -> !file.isDirectory()).map(t -> {
+				try {
+					return t.getCanonicalPath();
+				} catch (IOException e) {
+					return "";
+				}
+			}).collect(Collectors.toSet());
+
+		for (String document: documents) {					
+				runTransformation( "CDAR2.ContinuityOfCareDocument","FHIRR4JSON.MasterBundle", document,"json");			 
+		}
+	}
+ 
  
 
 }
