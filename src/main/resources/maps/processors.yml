@@ -5,6 +5,16 @@ preprocessors:
        class: org.mdmi.processors.cda.CDAPreProcesor
        groups:
          - CDAR2
+    hl7v2:
+       name: HL7V2MessagePreProcessor
+       class: org.mdmi.processors.hl7v2.HL7V2MessagePreProcessor
+       groups:
+         - HL7V2
+    apex:
+       name: SBHADeliminated2XML
+       class: org.mdmi.processors.apex.APEXDeliminated2XML
+       groups:
+         - SBHA
     fhir:
        name: PreProcessorForFHIRJson
        class: org.mdmi.processors.fhir.PreProcessorForFHIRJson
