@@ -1,1870 +1,1449 @@
 {
-   "entry": [
-      {
-         "request": {
-            "method": "POST",
-            "url": "Practitioner"
-         },
-         "resource": {
-            "identifier": [
-               {
-                  "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3",
-                  "value": "92698"
-               },
-               {
-                  "system": "urn:oid:2.16.840.1.113883.4.6",
-                  "value": "1234123400"
-               }
-            ],
-            "address": [
-               {
-                  "use": "home"
-               }
-            ],
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
+    "entry": [
+        {
+            "request": {
+                "method": "POST",
+                "url": "Practitioner"
             },
-            "name": [
-               {
-                  "given": [
-                     "Provider"
-                  ],
-                  "family": "abc"
-               }
-            ],
-            "telecom": [
-               {
-                  "system": "email",
-                  "use": "work",
-                  "value": "provider@allsripts.com"
-               }
-            ],
-            "id": "e87c882c-f317-4b65-9a10-5ff3eecbcd05",
-            "resourceType": "Practitioner"
-         },
-         "fullUrl": "Practitioner/e87c882c-f317-4b65-9a10-5ff3eecbcd05"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "Practitioner"
-         },
-         "resource": {
-            "identifier": [
-               {
-                  "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.3.3",
-                  "value": "3"
-               }
-            ],
-            "address": [
-               {
-                  "city": "Chicago",
-                  "use": "home",
-                  "line": [
-                     "123 main street"
-                  ],
-                  "postalCode": "60629",
-                  "state": "IL"
-               }
-            ],
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
-            },
-            "telecom": [
-               {
-                  "system": "phone",
-                  "use": "work",
-                  "value": "+1-(676)857-6769"
-               }
-            ],
-            "id": "bb58ffb1-c494-469b-a87f-1cd853ad2d2a",
-            "resourceType": "Practitioner"
-         },
-         "fullUrl": "Practitioner/bb58ffb1-c494-469b-a87f-1cd853ad2d2a"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "Patient"
-         },
-         "resource": {
-            "identifier": [
-               {
-                  "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3",
-                  "value": "160920144139807"
-               }
-            ],
-            "extension": [
-               {
-                  "extension": [
-                     {
-                        "valueCoding": {
-                           "system": "2.16.840.1.113883.6.238",
-                           "code": "2106-3",
-                           "display": "White"
-                        },
-                        "url": "ombCategory"
-                     },
-                     {
-                        "valueString": "White",
-                        "url": "text"
-                     },
-                     {
-                        "valueCoding": {
-                           "system": "2.16.840.1.113883.6.238",
-                           "code": "2106-3",
-                           "display": "White"
-                        },
-                        "url": "ombCategory"
-                     }
-                  ],
-                  "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
-               },
-               {
-                  "extension": [
-                     {
-                        "valueCoding": {
-                           "system": "2.16.840.1.113883.6.238",
-                           "code": "2135-2",
-                           "display": "Hispanic or Latino"
-                        },
-                        "url": "ombCategory"
-                     },
-                     {
-                        "valueString": "Hispanic or Latino",
-                        "url": "text"
-                     },
-                     {
-                        "valueCoding": {
-                           "system": "2.16.840.1.113883.6.238",
-                           "code": "2135-2",
-                           "display": "Hispanic or Latino"
-                        },
-                        "url": "ombCategory"
-                     }
-                  ],
-                  "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
-               }
-            ],
-            "address": [
-               {
-                  "city": "Beaverton",
-                  "use": "home",
-                  "line": [
-                     "1357 Amber Drive"
-                  ],
-                  "postalCode": "97006",
-                  "state": "OR"
-               }
-            ],
-            "managingOrganization": {
-               "display": "Organization/1.3.6.1.4.1.22812.3.2009316.3::3"
-            },
-            "gender": "female",
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
-            },
-            "name": [
-               {
-                  "given": [
-                     "Myra"
-                  ],
-                  "use": "usual",
-                  "family": "Jones"
-               }
-            ],
-            "id": "95ba6ba0-1bfd-41eb-9373-8c848ba018ab",
-            "communication": [
-               {
-                  "language": {
-                     "coding": [
+            "resource": {
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3",
+                        "value": "92698"
+                    },
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.4.6",
+                        "value": "1234123400"
+                    }
+                ],
+                "address": [
+                    {
+                        "use": "home"
+                    }
+                ],
+                "meta": {
+                    "tag": [
                         {
-                           "display": "en"
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
                         }
-                     ]
-                  },
-                  "preferred": true
-               }
-            ],
-            "birthDate": "1947-05-01",
-            "resourceType": "Patient"
-         },
-         "fullUrl": "Patient/95ba6ba0-1bfd-41eb-9373-8c848ba018ab"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "Patient"
-         },
-         "resource": {
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
-            },
-            "generalPractitioner": [
-               {
-                  "display": "Practitioner/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "Practitioner/2.16.840.1.113883.4.6::1234123400"
-               },
-               {
-                  "display": "Practitioner/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "Practitioner/2.16.840.1.113883.4.6::1234123400"
-               },
-               {
-                  "display": "Practitioner/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "Practitioner/2.16.840.1.113883.4.6::1234123400"
-               },
-               {
-                  "display": "Practitioner/1.3.6.1.4.1.22812.3.2009316.3.3.3::3"
-               },
-               {
-                  "display": "Practitioner/1.3.6.1.4.1.22812.3.2009316.3.3.3::3"
-               },
-               {
-                  "display": "Practitioner/1.3.6.1.4.1.22812.3.2009316.3.3.3::3"
-               },
-               {
-                  "display": "Practitioner/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "Practitioner/2.16.840.1.113883.4.6::1234123400"
-               },
-               {
-                  "display": "Practitioner/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "Practitioner/2.16.840.1.113883.4.6::1234123400"
-               },
-               {
-                  "display": "Practitioner/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "Practitioner/2.16.840.1.113883.4.6::1234123400"
-               },
-               {
-                  "display": "Practitioner/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "Practitioner/2.16.840.1.113883.4.6::1234123400"
-               }
-            ],
-            "id": "044bf52f-ac7b-47b6-b235-b48c5b4e1532",
-            "resourceType": "Patient"
-         },
-         "fullUrl": "Patient/044bf52f-ac7b-47b6-b235-b48c5b4e1532"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "Provenance"
-         },
-         "resource": {
-            "agent": [
-               {
-                  "who": {
-                     "display": "Practitioner/1.3.6.1.4.1.22812.3.2009316.3::92698"
-                  }
-               },
-               {
-                  "onBehalfOf": {
-                     "display": "Organization/1.3.6.1.4.1.22812.3.2009316.3::3"
-                  },
-                  "who": {
-                     "display": "Practitioner/1.3.6.1.4.1.22812.3.2009316.3.3.3::3"
-                  }
-               },
-               {
-                  "who": {
-                     "reference": "Organization/1.3.6.1.4.1.22812.3.2009316.3::3"
-                  }
-               },
-               {
-                  "who": {
-                     "display": "Practitioner/1.3.6.1.4.1.22812.3.2009316.3::92698"
-                  }
-               }
-            ],
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
-            },
-            "id": "c2cba3ef-915e-47c0-832d-8396a86ee60c",
-            "resourceType": "Provenance",
-            "target": [
-               {
-                  "display": "/Condition/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545069300001"
-               },
-               {
-                  "display": "/Condition/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545069300001"
-               },
-               {
-                  "display": "/Condition/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545077400017"
-               },
-               {
-                  "display": "/Condition/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545077400019"
-               },
-               {
-                  "display": "/Condition/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545069300001"
-               },
-               {
-                  "display": "/Condition/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545069300001"
-               },
-               {
-                  "display": "/Condition/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545077400017"
-               },
-               {
-                  "display": "/Condition/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545077400019"
-               }
-            ]
-         },
-         "fullUrl": "Provenance/c2cba3ef-915e-47c0-832d-8396a86ee60c"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "Organization"
-         },
-         "resource": {
-            "identifier": [
-               {
-                  "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3",
-                  "value": "3"
-               }
-            ],
-            "address": [
-               {
-                  "city": "Chicago",
-                  "use": "home",
-                  "line": [
-                     "123 main street"
-                  ],
-                  "postalCode": "60629",
-                  "state": "IL"
-               }
-            ],
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
-            },
-            "name": "Primary Care's Partners Test",
-            "telecom": [
-               {
-                  "system": "phone",
-                  "use": "work",
-                  "value": "+1-(676)857-6769"
-               }
-            ],
-            "id": "f1153fbe-ebb9-4377-ae80-673af2d06c6a",
-            "resourceType": "Organization"
-         },
-         "fullUrl": "Organization/f1153fbe-ebb9-4377-ae80-673af2d06c6a"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "Condition"
-         },
-         "resource": {
-            "identifier": [
-               {
-                  "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1",
-                  "value": "545069300001"
-               },
-               {
-                  "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1",
-                  "value": "545069300001"
-               }
-            ],
-            "note": [
-               {
-                  "text": "Pneumonia"
-               }
-            ],
-            "code": {
-               "coding": [
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.96",
-                     "code": "233604007"
-                  },
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.103",
-                     "code": "486"
-                  },
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.90",
-                     "code": "J18.9"
-                  },
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.3.247.1.1",
-                     "code": "87580"
-                  }
-               ],
-               "text": "Pneumonia"
-            },
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
-            },
-            "subject": {
-               "display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
-            },
-            "id": "d466d205-45fb-45ed-a0ca-d585833f4314",
-            "category": [
-               {
-                  "coding": [
-                     {
-                        "system": "urn:oid:2.16.840.1.113883.6.96",
-                        "code": "55607006"
-                     }
-                  ]
-               },
-               {
-                  "coding": [
-                     {
-                        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-                        "code": "problem-list-item",
-                        "display": "Problem List Item"
-                     }
-                  ],
-                  "text": "Problem List Item"
-               }
-            ],
-            "onsetDateTime": "2012-08-06",
-            "resourceType": "Condition"
-         },
-         "fullUrl": "Condition/d466d205-45fb-45ed-a0ca-d585833f4314"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "Condition"
-         },
-         "resource": {
-            "identifier": [
-               {
-                  "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1",
-                  "value": "545077400017"
-               },
-               {
-                  "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1",
-                  "value": "545077400019"
-               }
-            ],
-            "note": [
-               {
-                  "text": "Asthma"
-               }
-            ],
-            "code": {
-               "coding": [
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.96",
-                     "code": "195967001"
-                  },
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.103",
-                     "code": "493.90"
-                  },
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.90",
-                     "code": "J45.909"
-                  },
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.3.247.1.1",
-                     "code": "94262"
-                  }
-               ],
-               "text": "Asthma"
-            },
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
-            },
-            "subject": {
-               "display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
-            },
-            "id": "c1305dfe-782b-465c-9208-e6a5426d5e43",
-            "category": [
-               {
-                  "coding": [
-                     {
-                        "system": "urn:oid:2.16.840.1.113883.6.96",
-                        "code": "55607006"
-                     }
-                  ]
-               },
-               {
-                  "coding": [
-                     {
-                        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-                        "code": "problem-list-item",
-                        "display": "Problem List Item"
-                     }
-                  ],
-                  "text": "Problem List Item"
-               }
-            ],
-            "resourceType": "Condition"
-         },
-         "fullUrl": "Condition/c1305dfe-782b-465c-9208-e6a5426d5e43"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "AllergyIntolerance"
-         },
-         "resource": {
-            "identifier": [
-               {
-                  "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.10.2",
-                  "value": "545077400001"
-               },
-               {
-                  "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.10.2",
-                  "value": "545077400003"
-               }
-            ],
-            "code": {
-               "coding": [
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.88",
-                     "code": "1191"
-                  },
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.96",
-                     "code": "293586001"
-                  }
-               ]
-            },
-            "reaction": [
-               {
-                  "severity": "severe",
-                  "note": [
-                     {
-                        "text": "Hives"
-                     }
-                  ],
-                  "manifestation": [
-                     {
-                        "coding": [
-                           {
-                              "system": "urn:oid:2.16.840.1.113883.6.96",
-                              "code": "247472004"
-                           }
+                    ]
+                },
+                "name": [
+                    {
+                        "given": [
+                            "Provider"
                         ],
-                        "text": "Hives"
-                     }
-                  ]
-               }
-            ],
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
+                        "family": "abc"
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "email",
+                        "value": "provider@allsripts.com"
+                    }
+                ],
+                "id": "7ff9752f-2589-4e9e-8f96-7394183b1cdb",
+                "resourceType": "Practitioner"
             },
-            "patient": {
-               "display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+            "fullUrl": "Practitioner/7ff9752f-2589-4e9e-8f96-7394183b1cdb"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "Practitioner"
             },
-            "id": "545077400001",
-            "clinicalStatus": {
-               "coding": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
-                     "code": "active",
-                     "display": "Active"
-                  }
-               ],
-               "text": "Active"
+            "resource": {
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.3.3",
+                        "value": "3"
+                    }
+                ],
+                "address": [
+                    {
+                        "city": "Chicago",
+                        "use": "home",
+                        "line": [
+                            "123 main street"
+                        ],
+                        "postalCode": "60629",
+                        "state": "IL"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "+1-(676)857-6769"
+                    }
+                ],
+                "id": "34ce096d-99db-4248-bb12-47a4d5010759",
+                "resourceType": "Practitioner"
             },
-            "type": "intolerance",
-            "category": [
-               "medication"
-            ],
-            "onsetDateTime": "2008-05-01",
-            "resourceType": "AllergyIntolerance"
-         },
-         "fullUrl": "AllergyIntolerance/545077400001"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "MedicationAdministration"
-         },
-         "resource": {
-            "identifier": [
-               {
-                  "system": "cdbd33f0-6cde-11db-9fe1-0800200c9a66",
-                  "value": "urn:ietf:rfc:3986"
-               }
-            ],
-            "dosage": {
-               "dose": {
-                  "value": 1
-               }
+            "fullUrl": "Practitioner/34ce096d-99db-4248-bb12-47a4d5010759"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "Location"
             },
-            "performer": [
-               {
-                  "actor": {
-                     "display": "/2.16.840.1.113883.4.6::2222222222"
-                  }
-               }
-            ],
-            "effectivePeriod": {
-               "start": "2012-08-06"
+            "resource": {
+                "managingOrganization": {
+                    "display": "Organization/1.3.6.1.4.1.22812.3.2009316.3::3"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "id": "e8116366-17a4-4212-9fa2-7ee0a4dde4f7",
+                "resourceType": "Location",
+                "status": "active"
             },
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
+            "fullUrl": "Location/e8116366-17a4-4212-9fa2-7ee0a4dde4f7"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "PractitionerRole"
             },
-            "subject": {
-               "display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+            "resource": {
+                "practitioner": {
+                    "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "organization": {
+                    "display": "Organization/1.3.6.1.4.1.22812.3.2009316.3::3"
+                },
+                "id": "7f19f9ac-d15b-439c-8da7-8c3c76e793df",
+                "resourceType": "PractitionerRole"
             },
-            "id": "urn:ietf:rfc:3986",
-            "medicationCodeableConcept": {
-               "coding": [
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.88",
-                     "code": "582498",
-                     "display": "Albuterol 0.09 MG/ACTUAT inhalant powder"
-                  }
-               ],
-               "text": "Albuterol 0.09 MG/ACTUAT inhalant powder"
+            "fullUrl": "PractitionerRole/7f19f9ac-d15b-439c-8da7-8c3c76e793df"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "HealthcareService"
             },
-            "resourceType": "MedicationAdministration",
-            "status": "in-progress"
-         },
-         "fullUrl": "MedicationAdministration/urn:ietf:rfc:3986"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "Medication"
-         },
-         "resource": {
-            "identifier": [
-               {
-                  "system": "2a620155-9d11-439e-92b3-5d9815ff4ee8",
-                  "value": "urn:ietf:rfc:3986"
-               }
-            ],
-            "code": {
-               "coding": [
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.88",
-                     "code": "582498",
-                     "display": "Albuterol 0.09 MG/ACTUAT inhalant powder"
-                  }
-               ],
-               "text": "Albuterol 0.09 MG/ACTUAT inhalant powder"
+            "resource": {
+                "providedBy": {
+                    "display": "/1.3.6.1.4.1.22812.3.2009316.3::3"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "id": "29cf852f-3622-4d30-ab86-39b8b15aa4eb",
+                "resourceType": "HealthcareService"
             },
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
+            "fullUrl": "HealthcareService/29cf852f-3622-4d30-ab86-39b8b15aa4eb"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "Patient"
             },
-            "id": "urn:ietf:rfc:3986",
-            "resourceType": "Medication"
-         },
-         "fullUrl": "Medication/urn:ietf:rfc:3986"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "Procedure"
-         },
-         "resource": {
-            "identifier": [
-               {
-                  "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.7",
-                  "value": "545069400001"
-               },
-               {
-                  "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.7",
-                  "value": "545069400003"
-               }
-            ],
-            "code": {
-               "coding": [
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.96",
-                     "code": "416940007",
-                     "display": "H/O chest x-ray"
-                  },
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.103",
-                     "code": "V15.89"
-                  },
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.90",
-                     "code": "Z92.89"
-                  },
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.3.247.1.1",
-                     "code": "2782946"
-                  }
-               ],
-               "text": "H/O chest x-ray"
+            "resource": {
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3",
+                        "value": "160920144139807"
+                    }
+                ],
+                "extension": [
+                    {
+                        "extension": [
+                            {
+                                "valueCoding": {
+                                    "system": "2.16.840.1.113883.6.238",
+                                    "code": "2106-3",
+                                    "display": "White"
+                                },
+                                "url": "ombCategory"
+                            },
+                            {
+                                "valueString": "White",
+                                "url": "text"
+                            },
+                            {
+                                "valueCoding": {
+                                    "system": "2.16.840.1.113883.6.238",
+                                    "code": "2106-3",
+                                    "display": "White"
+                                },
+                                "url": "ombCategory"
+                            }
+                        ],
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "valueCoding": {
+                                    "system": "2.16.840.1.113883.6.238",
+                                    "code": "2135-2",
+                                    "display": "Hispanic or Latino"
+                                },
+                                "url": "ombCategory"
+                            },
+                            {
+                                "valueString": "Hispanic or Latino",
+                                "url": "text"
+                            },
+                            {
+                                "valueCoding": {
+                                    "system": "2.16.840.1.113883.6.238",
+                                    "code": "2135-2",
+                                    "display": "Hispanic or Latino"
+                                },
+                                "url": "ombCategory"
+                            }
+                        ],
+                        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+                    }
+                ],
+                "address": [
+                    {
+                        "city": "Beaverton",
+                        "use": "home",
+                        "line": [
+                            "1357 Amber Drive"
+                        ],
+                        "postalCode": "97006",
+                        "state": "OR"
+                    }
+                ],
+                "managingOrganization": {
+                    "display": "Organization/1.3.6.1.4.1.22812.3.2009316.3::3"
+                },
+                "gender": "female",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "name": [
+                    {
+                        "given": [
+                            "Myra"
+                        ],
+                        "use": "usual",
+                        "family": "Jones"
+                    }
+                ],
+                "id": "33187780-2c64-497c-b7d5-2548e01cc89f",
+                "communication": [
+                    {
+                        "language": {
+                            "coding": [
+                                {
+                                    "display": "en"
+                                }
+                            ]
+                        },
+                        "preferred": true
+                    }
+                ],
+                "birthDate": "1947-05-01",
+                "resourceType": "Patient"
             },
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
+            "fullUrl": "Patient/33187780-2c64-497c-b7d5-2548e01cc89f"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "Organization"
             },
-            "subject": {
-               "display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+            "resource": {
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3",
+                        "value": "3"
+                    }
+                ],
+                "address": [
+                    {
+                        "city": "Chicago",
+                        "use": "home",
+                        "line": [
+                            "123 main street"
+                        ],
+                        "postalCode": "60629",
+                        "state": "IL"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "name": "Primary Care's Partners Test",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "+1-(676)857-6769"
+                    }
+                ],
+                "id": "18e20d99-74b6-44b8-bf50-ef8608153cc4",
+                "resourceType": "Organization"
             },
-            "id": "0723db5d-ca2a-48d4-9942-5189b6d1fc7f",
-            "performedDateTime": "2012-08-06",
-            "resourceType": "Procedure",
-            "status": "completed"
-         },
-         "fullUrl": "Procedure/0723db5d-ca2a-48d4-9942-5189b6d1fc7f"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "Immunization"
-         },
-         "resource": {
-            "identifier": [
-               {
-                  "system": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92",
-                  "value": "urn:ietf:rfc:3986"
-               }
-            ],
-            "note": [
-               {
-                  "text": "Influenza Virus Vaccine 1 8/15/2010 Completed"
-               }
-            ],
-            "performer": [
-               {
-                  "actor": {
-                     "display": "/2.16.840.1.113883.19.5.9999.456::2981824"
-                  }
-               }
-            ],
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
+            "fullUrl": "Organization/18e20d99-74b6-44b8-bf50-ef8608153cc4"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "Condition"
             },
-            "patient": {
-               "display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+            "resource": {
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1",
+                        "value": "545069300001"
+                    },
+                    {
+                        "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1",
+                        "value": "545069300001"
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Pneumonia"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.96",
+                            "code": "233604007"
+                        },
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.103",
+                            "code": "486"
+                        },
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.90",
+                            "code": "J18.9"
+                        },
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.3.247.1.1",
+                            "code": "87580"
+                        }
+                    ],
+                    "text": "Pneumonia"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "subject": {
+                    "display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+                },
+                "id": "f41facfd-7c5d-4b8d-a079-31ce7e7bac02",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.96",
+                                "code": "55607006"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "problem-list-item",
+                                "display": "Problem List Item"
+                            }
+                        ],
+                        "text": "Problem List Item"
+                    }
+                ],
+                "onsetDateTime": "2012-08-06",
+                "resourceType": "Condition"
             },
-            "occurrenceDateTime": "2010-08-15",
-            "id": "152434f2-d7ef-4aca-96ed-692454ec5b69",
-            "lotNumber": "1",
-            "recorded": "2010-08-15",
-            "vaccineCode": {
-               "coding": [
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.12.292",
-                     "code": "88",
-                     "display": "Influenza virus vaccine"
-                  }
-               ],
-               "text": "Influenza virus vaccine"
+            "fullUrl": "Condition/f41facfd-7c5d-4b8d-a079-31ce7e7bac02"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "Condition"
             },
-            "resourceType": "Immunization",
-            "status": "completed"
-         },
-         "fullUrl": "Immunization/152434f2-d7ef-4aca-96ed-692454ec5b69"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "Observation"
-         },
-         "resource": {
-            "identifier": [
-               {
-                  "system": "urn:oid:2.16.840.1.113883.19",
-                  "value": "123456789"
-               }
-            ],
-            "note": [
-               {
-                  "text": "Status: Current every day smoker Detail: Moderate smoker (10-19 cigs/day) Started: 1992 Stopped: Recorded June 6, 2014 10:32am"
-               }
-            ],
-            "code": {
-               "coding": [
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.1",
-                     "code": "72166-2",
-                     "display": "Tobacco smoking status NHIS"
-                  }
-               ],
-               "text": "Tobacco smoking status NHIS"
+            "resource": {
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1",
+                        "value": "545077400017"
+                    },
+                    {
+                        "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1",
+                        "value": "545077400019"
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Asthma"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.96",
+                            "code": "195967001"
+                        },
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.103",
+                            "code": "493.90"
+                        },
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.90",
+                            "code": "J45.909"
+                        },
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.3.247.1.1",
+                            "code": "94262"
+                        }
+                    ],
+                    "text": "Asthma"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "subject": {
+                    "display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+                },
+                "id": "9af2379f-6e18-4d34-a114-929e8638b9fc",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.96",
+                                "code": "55607006"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "problem-list-item",
+                                "display": "Problem List Item"
+                            }
+                        ],
+                        "text": "Problem List Item"
+                    }
+                ],
+                "resourceType": "Condition"
             },
-            "effectiveDateTime": "2014-06-06T10:32-05:00",
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
+            "fullUrl": "Condition/9af2379f-6e18-4d34-a114-929e8638b9fc"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "AllergyIntolerance"
             },
-            "id": "88bb2019-fd6c-4d78-89ca-0124d6a6438d",
-            "resourceType": "Observation",
-            "status": "final"
-         },
-         "fullUrl": "Observation/88bb2019-fd6c-4d78-89ca-0124d6a6438d"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "DiagnosticReport"
-         },
-         "resource": {
-            "identifier": [
-               {
-                  "system": "urn:oid:1.3.6.1.4.1.22812.20.1.1.4.5",
-                  "value": "1"
-               }
-            ],
-            "code": {
-               "coding": [
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.1",
-                     "code": "24357-6"
-                  }
-               ],
-               "text": "Urinanalysis macro (dipstick) panel"
+            "resource": {
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.10.2",
+                        "value": "545077400001"
+                    },
+                    {
+                        "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.10.2",
+                        "value": "545077400003"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.88",
+                            "code": "1191"
+                        },
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.96",
+                            "code": "293586001"
+                        }
+                    ]
+                },
+                "reaction": [
+                    {
+                        "severity": "severe",
+                        "note": [
+                            {
+                                "text": "Hives"
+                            }
+                        ],
+                        "manifestation": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.6.96",
+                                        "code": "247472004"
+                                    }
+                                ],
+                                "text": "Hives"
+                            }
+                        ],
+                        "id": "urn:ietf:rfc:3986"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "patient": {
+                    "display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+                },
+                "id": "545077400001",
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ],
+                    "text": "Active"
+                },
+                "type": "intolerance",
+                "category": [
+                    "medication"
+                ],
+                "onsetDateTime": "2008-05-01",
+                "resourceType": "AllergyIntolerance"
             },
-            "effectivePeriod": {
-               "start": "2015-06-22",
-               "end": "2015-06-22"
+            "fullUrl": "AllergyIntolerance/545077400001"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "MedicationAdministration"
             },
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
+            "resource": {
+                "identifier": [
+                    {
+                        "system": "cdbd33f0-6cde-11db-9fe1-0800200c9a66",
+                        "value": "urn:ietf:rfc:3986"
+                    }
+                ],
+                "dosage": {
+                    "dose": {
+                        "value": 1
+                    }
+                },
+                "performer": [
+                    {
+                        "actor": {
+                            "display": "/2.16.840.1.113883.4.6::2222222222"
+                        }
+                    }
+                ],
+                "effectivePeriod": {
+                    "start": "2012-08-06"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "subject": {
+                    "display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+                },
+                "id": "urn:ietf:rfc:3986",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.88",
+                            "code": "582498",
+                            "display": "Albuterol 0.09 MG/ACTUAT inhalant powder"
+                        }
+                    ],
+                    "text": "Albuterol 0.09 MG/ACTUAT inhalant powder"
+                },
+                "resourceType": "MedicationAdministration",
+                "status": "in-progress"
             },
-            "id": "48ea1603-10a0-495e-976d-73952162563e",
-            "resourceType": "DiagnosticReport",
-            "status": "final"
-         },
-         "fullUrl": "DiagnosticReport/48ea1603-10a0-495e-976d-73952162563e"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "Observation"
-         },
-         "resource": {
-            "identifier": [
-               {
-                  "system": "urn:oid:2.16.840.1.113883.3.42.126.100001.19",
-                  "value": "216881330410151584"
-               }
-            ],
-            "note": [
-               {
-                  "text": "80 /min"
-               }
-            ],
-            "code": {
-               "coding": [
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.1",
-                     "code": "8867-4",
-                     "display": "HEART RATE"
-                  }
-               ],
-               "text": "HEART RATE"
+            "fullUrl": "MedicationAdministration/urn:ietf:rfc:3986"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "Medication"
             },
-            "effectiveDateTime": "2014-06-06T10:32-05:00",
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
+            "resource": {
+                "identifier": [
+                    {
+                        "system": "2a620155-9d11-439e-92b3-5d9815ff4ee8",
+                        "value": "urn:ietf:rfc:3986"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.88",
+                            "code": "582498",
+                            "display": "Albuterol 0.09 MG/ACTUAT inhalant powder"
+                        }
+                    ],
+                    "text": "Albuterol 0.09 MG/ACTUAT inhalant powder"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "id": "urn:ietf:rfc:3986",
+                "resourceType": "Medication"
             },
-            "id": "115fa327-d5f7-4f9a-b3cb-ab6a6f00ae1b",
-            "category": [
-               {
-                  "coding": [
-                     {
-                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                        "code": "vital-signs",
-                        "display": "Vital Signs"
-                     }
-                  ],
-                  "text": "Vital Signs"
-               }
-            ],
-            "resourceType": "Observation",
-            "status": "final",
-            "valueQuantity": {
-               "unit": "/min",
-               "value": 80
+            "fullUrl": "Medication/urn:ietf:rfc:3986"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "Procedure"
+            },
+            "resource": {
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.7",
+                        "value": "545069400001"
+                    },
+                    {
+                        "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.7",
+                        "value": "545069400003"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.96",
+                            "code": "416940007",
+                            "display": "H/O chest x-ray"
+                        },
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.103",
+                            "code": "V15.89"
+                        },
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.90",
+                            "code": "Z92.89"
+                        },
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.3.247.1.1",
+                            "code": "2782946"
+                        }
+                    ],
+                    "text": "H/O chest x-ray"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "subject": {
+                    "display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+                },
+                "id": "3a1945cc-c1f7-41ba-9df0-d7b215b4dd05",
+                "performedDateTime": "2012-08-06",
+                "resourceType": "Procedure",
+                "status": "completed"
+            },
+            "fullUrl": "Procedure/3a1945cc-c1f7-41ba-9df0-d7b215b4dd05"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "Immunization"
+            },
+            "resource": {
+                "identifier": [
+                    {
+                        "system": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92",
+                        "value": "urn:ietf:rfc:3986"
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Influenza Virus Vaccine 1 8/15/2010 Completed"
+                    }
+                ],
+                "performer": [
+                    {
+                        "actor": {
+                            "display": "/2.16.840.1.113883.19.5.9999.456::2981824"
+                        }
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "patient": {
+                    "display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+                },
+                "occurrenceDateTime": "2010-08-15",
+                "id": "3b8dc8b4-f145-4cb8-8642-df6f79b6593c",
+                "lotNumber": "1",
+                "recorded": "2010-08-15",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.12.292",
+                            "code": "88",
+                            "display": "Influenza virus vaccine"
+                        }
+                    ],
+                    "text": "Influenza virus vaccine"
+                },
+                "resourceType": "Immunization",
+                "status": "completed"
+            },
+            "fullUrl": "Immunization/3b8dc8b4-f145-4cb8-8642-df6f79b6593c"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            },
+            "resource": {
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.19",
+                        "value": "123456789"
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Status: Current every day smoker Detail: Moderate smoker (10-19 cigs/day) Started: 1992 Stopped: Recorded June 6, 2014 10:32am"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.1",
+                            "code": "72166-2",
+                            "display": "Tobacco smoking status NHIS"
+                        }
+                    ],
+                    "text": "Tobacco smoking status NHIS"
+                },
+                "effectiveDateTime": "2014-06-06T10:32-05:00",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "id": "eea1c6e1-6aec-40ba-a047-655ece821027",
+                "resourceType": "Observation",
+                "status": "final"
+            },
+            "fullUrl": "Observation/eea1c6e1-6aec-40ba-a047-655ece821027"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "DiagnosticReport"
+            },
+            "resource": {
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.3.6.1.4.1.22812.20.1.1.4.5",
+                        "value": "1"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.1",
+                            "code": "24357-6"
+                        }
+                    ],
+                    "text": "Urinanalysis macro (dipstick) panel"
+                },
+                "effectivePeriod": {
+                    "start": "2015-06-22",
+                    "end": "2015-06-22"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "subject": {
+                    "display": "/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+                },
+                "id": "06c563b2-0389-4a37-bd02-fb0e0de8d9b1",
+                "resourceType": "DiagnosticReport",
+                "status": "final"
+            },
+            "fullUrl": "DiagnosticReport/06c563b2-0389-4a37-bd02-fb0e0de8d9b1"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            },
+            "resource": {
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.3.42.126.100001.19",
+                        "value": "216881330410151584"
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "80 /min"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.1",
+                            "code": "8867-4",
+                            "display": "HEART RATE"
+                        }
+                    ],
+                    "text": "HEART RATE"
+                },
+                "effectiveDateTime": "2014-06-06T10:32-05:00",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "id": "abe44de6-3583-4c19-b217-a478a663efd8",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ],
+                        "text": "Vital Signs"
+                    }
+                ],
+                "resourceType": "Observation",
+                "status": "final",
+                "valueQuantity": {
+                    "unit": "/min",
+                    "value": 80
+                }
+            },
+            "fullUrl": "Observation/abe44de6-3583-4c19-b217-a478a663efd8"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "Encounter"
+            },
+            "resource": {
+                "identifier": [
+                    {
+                        "system": "2a620155-9d11-439e-92b3-5d9815ff4de8",
+                        "value": "urn:ietf:rfc:3986"
+                    }
+                ],
+                "period": {
+                    "start": "2012-08-15T10:00-08:00"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "subject": {
+                    "display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+                },
+                "serviceProvider": {
+                    "display": "Organization/1.3.6.1.4.1.22812.3.2009316.3::3"
+                },
+                "id": "8e3c6bf1-8e66-42db-971b-82589ba6160e",
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.12",
+                                "code": "99213",
+                                "display": "Office outpatient visit 15 minutes"
+                            }
+                        ],
+                        "text": "Office outpatient visit 15 minutes"
+                    }
+                ],
+                "class": {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                    "code": "IMP",
+                    "display": "inpatient encounter"
+                },
+                "participant": [
+                    {
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:2.16.840.1.113883.6.101",
+                                        "code": "207R00000X",
+                                        "display": "Internal Medicine"
+                                    }
+                                ],
+                                "text": "Internal Medicine"
+                            }
+                        ]
+                    }
+                ],
+                "resourceType": "Encounter",
+                "status": "unknown"
+            },
+            "fullUrl": "Encounter/8e3c6bf1-8e66-42db-971b-82589ba6160e"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            },
+            "resource": {
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.3.6.1.4.1.22812.20.1.1.4.5",
+                        "value": "13"
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Specific gravity of Urine by Test strip 1.015 Range: SDWG Example agreed to ID reference here since moving to td would mean text 'Range' is in observation 1.005 - 1.030"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.1",
+                            "code": "5811-5",
+                            "display": "Specific gravity of Urine by Test strip"
+                        }
+                    ],
+                    "text": "Specific gravity of Urine by Test strip"
+                },
+                "effectiveDateTime": "2014-06-06T10:32-05:00",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "id": "ababc6b1-0709-4de5-a5c9-88fbe22ea59c",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ],
+                        "text": "Laboratory"
+                    }
+                ],
+                "resourceType": "Observation",
+                "status": "final",
+                "valueQuantity": {
+                    "value": 1.015
+                }
+            },
+            "fullUrl": "Observation/ababc6b1-0709-4de5-a5c9-88fbe22ea59c"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            },
+            "resource": {
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "subject": {
+                    "display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+                },
+                "id": "0e897111-b754-45fb-8669-ed2a00201027",
+                "resourceType": "Observation"
+            },
+            "fullUrl": "Observation/0e897111-b754-45fb-8669-ed2a00201027"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "MedicationDispense"
+            },
+            "resource": {
+                "partOf": [
+                    {
+                        "display": "/1.3.6.1.4.1.22812.3.2009316.3.4.7::545069400001"
+                    },
+                    {
+                        "display": "/1.3.6.1.4.1.22812.3.2009316.3.4.7::545069400003"
+                    }
+                ],
+                "quantity": {
+                    "value": 1
+                },
+                "receiver": [
+                    {
+                        "display": "/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "context": {
+                    "display": "/2a620155-9d11-439e-92b3-5d9815ff4de8::urn:ietf:rfc:3986"
+                },
+                "id": "06da1dec-dc87-4435-bb05-a0d61b1abc94",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.88",
+                            "code": "582498",
+                            "display": "Albuterol 0.09 MG/ACTUAT inhalant powder"
+                        }
+                    ],
+                    "text": "Albuterol 0.09 MG/ACTUAT inhalant powder"
+                },
+                "resourceType": "MedicationDispense",
+                "status": "unknown"
+            },
+            "fullUrl": "MedicationDispense/06da1dec-dc87-4435-bb05-a0d61b1abc94"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "MedicationRequest"
+            },
+            "resource": {
+                "reportedReference": {
+                    "display": "/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "id": "3c535c07-f6d7-4324-9700-fb634aee4226",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.88",
+                            "code": "582498",
+                            "display": "Albuterol 0.09 MG/ACTUAT inhalant powder"
+                        }
+                    ],
+                    "text": "Albuterol 0.09 MG/ACTUAT inhalant powder"
+                },
+                "intent": "filler-order",
+                "resourceType": "MedicationRequest",
+                "status": "unknown"
+            },
+            "fullUrl": "MedicationRequest/3c535c07-f6d7-4324-9700-fb634aee4226"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "Claim"
+            },
+            "resource": {
+                "provider": {
+                    "reference": "Organization/1.3.6.1.4.1.22812.3.2009316.3::3"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "insurer": {
+                    "display": "Organization/1.3.6.1.4.1.22812.3.2009316.3::3"
+                },
+                "id": "ee9fe6a3-3033-495f-bd27-e2bd221fbed2",
+                "resourceType": "Claim"
+            },
+            "fullUrl": "Claim/ee9fe6a3-3033-495f-bd27-e2bd221fbed2"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "ExplanationOfBenefit"
+            },
+            "resource": {
+                "provider": {
+                    "display": "Practitioner/1.3.6.1.4.1.22812.3.2009316.3::92698"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "insurer": {
+                    "display": "Organization/1.3.6.1.4.1.22812.3.2009316.3::3"
+                },
+                "id": "3f5e6c7a-9355-4397-b3b8-dfb18542a785",
+                "resourceType": "ExplanationOfBenefit"
+            },
+            "fullUrl": "ExplanationOfBenefit/3f5e6c7a-9355-4397-b3b8-dfb18542a785"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "MedicationStatement"
+            },
+            "resource": {
+                "informationSource": {
+                    "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "context": {
+                    "display": "Encounter/2a620155-9d11-439e-92b3-5d9815ff4de8::urn:ietf:rfc:3986"
+                },
+                "id": "723a0cfe-932f-451d-bfcb-8573129f22a9",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.88",
+                            "code": "582498",
+                            "display": "Albuterol 0.09 MG/ACTUAT inhalant powder"
+                        }
+                    ],
+                    "text": "Albuterol 0.09 MG/ACTUAT inhalant powder"
+                },
+                "resourceType": "MedicationStatement",
+                "status": "unknown"
+            },
+            "fullUrl": "MedicationStatement/723a0cfe-932f-451d-bfcb-8573129f22a9"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "DiagnosticReport"
+            },
+            "resource": {
+                "result": [
+                    {
+                        "display": "/2.16.840.1.113883.19::123456789"
+                    },
+                    {
+                        "display": "/1.3.6.1.4.1.22812.20.1.1.4.5::13"
+                    },
+                    {
+                        "display": "/2.16.840.1.113883.3.42.126.100001.19::216881330410151584"
+                    }
+                ],
+                "performer": [
+                    {
+                        "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
+                    },
+                    {
+                        "display": "/2.16.840.1.113883.4.6::1234123400"
+                    },
+                    {
+                        "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
+                    },
+                    {
+                        "display": "/2.16.840.1.113883.4.6::1234123400"
+                    },
+                    {
+                        "display": "/1.3.6.1.4.1.22812.3.2009316.3.3.3::3"
+                    },
+                    {
+                        "display": "/1.3.6.1.4.1.22812.3.2009316.3.3.3::3"
+                    },
+                    {
+                        "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
+                    },
+                    {
+                        "display": "/2.16.840.1.113883.4.6::1234123400"
+                    },
+                    {
+                        "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
+                    },
+                    {
+                        "display": "/2.16.840.1.113883.4.6::1234123400"
+                    },
+                    {
+                        "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
+                    },
+                    {
+                        "display": "/2.16.840.1.113883.4.6::1234123400"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "id": "e7bd6b30-2fa5-443e-93bf-84b02fa26201",
+                "encounter": {
+                    "display": "/2a620155-9d11-439e-92b3-5d9815ff4de8::urn:ietf:rfc:3986"
+                },
+                "resourceType": "DiagnosticReport"
+            },
+            "fullUrl": "DiagnosticReport/e7bd6b30-2fa5-443e-93bf-84b02fa26201"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "MedicationAdministration"
+            },
+            "resource": {
+                "identifier": [
+                    {
+                        "system": "cdbd33f0-6cde-11db-9fe1-0800200c9a66",
+                        "value": "urn:ietf:rfc:3986"
+                    }
+                ],
+                "performer": [
+                    {
+                        "actor": {
+                            "display": "/2.16.840.1.113883.4.6::2222222222"
+                        }
+                    }
+                ],
+                "effectiveDateTime": "2012-08-06",
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "id": "urn:ietf:rfc:3986",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.88",
+                            "code": "582498",
+                            "display": "Albuterol 0.09 MG/ACTUAT inhalant powder"
+                        }
+                    ],
+                    "text": "Albuterol 0.09 MG/ACTUAT inhalant powder"
+                },
+                "resourceType": "MedicationAdministration",
+                "status": "in-progress"
+            },
+            "fullUrl": "MedicationAdministration/urn:ietf:rfc:3986"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "Procedure"
+            },
+            "resource": {
+                "partOf": [
+                    {
+                        "display": "/2.16.840.1.113883.19::123456789"
+                    },
+                    {
+                        "display": "/1.3.6.1.4.1.22812.20.1.1.4.5::13"
+                    },
+                    {
+                        "display": "/2.16.840.1.113883.3.42.126.100001.19::216881330410151584"
+                    }
+                ],
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "id": "4a47aeb3-36f0-4304-a10a-1215f910d6d8",
+                "resourceType": "Procedure"
+            },
+            "fullUrl": "Procedure/4a47aeb3-36f0-4304-a10a-1215f910d6d8"
+        },
+        {
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            },
+            "resource": {
+                "identifier": [
+                    {
+                        "system": "db734647-fc99-424c-a864-7e3cda82e704",
+                        "value": "urn:ietf:rfc:3986"
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "urn:oid:2.16.840.1.113883.6.96",
+                            "code": "64109004",
+                            "display": "Costal Chondritis"
+                        }
+                    ],
+                    "text": "Costal Chondritis"
+                },
+                "meta": {
+                    "tag": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                            "code": "SUBSETTED",
+                            "display": "Resource encoded in summary mode"
+                        }
+                    ]
+                },
+                "id": "bad20486-4003-45ea-86da-839be7331a52",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "encounter-diagnosis",
+                                "display": "Encounter Diagnosis"
+                            }
+                        ],
+                        "text": "Encounter Diagnosis"
+                    }
+                ],
+                "onsetDateTime": "2012-08-15",
+                "resourceType": "Condition"
+            },
+            "fullUrl": "Condition/bad20486-4003-45ea-86da-839be7331a52"
+        }
+    ],
+    "meta": {
+        "tag": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                "code": "SUBSETTED",
+                "display": "Resource encoded in summary mode"
             }
-         },
-         "fullUrl": "Observation/115fa327-d5f7-4f9a-b3cb-ab6a6f00ae1b"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "Encounter"
-         },
-         "resource": {
-            "identifier": [
-               {
-                  "system": "2a620155-9d11-439e-92b3-5d9815ff4de8",
-                  "value": "urn:ietf:rfc:3986"
-               }
-            ],
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
-            },
-            "subject": {
-               "display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
-            },
-            "serviceProvider": {
-               "display": "Organization/1.3.6.1.4.1.22812.3.2009316.3::3"
-            },
-            "reasonReference": [
-               {
-                  "display": "/2.16.840.1.113883.19::123456789"
-               },
-               {
-                  "display": "/2.16.840.1.113883.19::123456789"
-               },
-               {
-                  "display": "/2.16.840.1.113883.19::123456789"
-               },
-               {
-                  "display": "/2.16.840.1.113883.19::123456789"
-               },
-               {
-                  "display": "/2.16.840.1.113883.19::123456789"
-               },
-               {
-                  "display": "/2.16.840.1.113883.19::123456789"
-               },
-               {
-                  "display": "/2.16.840.1.113883.19::123456789"
-               },
-               {
-                  "display": "/2.16.840.1.113883.19::123456789"
-               },
-               {
-                  "display": "/2.16.840.1.113883.19::123456789"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.20.1.1.4.5::13"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.20.1.1.4.5::13"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.20.1.1.4.5::13"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.20.1.1.4.5::13"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.20.1.1.4.5::13"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.20.1.1.4.5::13"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.20.1.1.4.5::13"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.20.1.1.4.5::13"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.20.1.1.4.5::13"
-               },
-               {
-                  "display": "/2.16.840.1.113883.3.42.126.100001.19::216881330410151584"
-               },
-               {
-                  "display": "/2.16.840.1.113883.3.42.126.100001.19::216881330410151584"
-               },
-               {
-                  "display": "/2.16.840.1.113883.3.42.126.100001.19::216881330410151584"
-               },
-               {
-                  "display": "/2.16.840.1.113883.3.42.126.100001.19::216881330410151584"
-               },
-               {
-                  "display": "/2.16.840.1.113883.3.42.126.100001.19::216881330410151584"
-               },
-               {
-                  "display": "/2.16.840.1.113883.3.42.126.100001.19::216881330410151584"
-               },
-               {
-                  "display": "/2.16.840.1.113883.3.42.126.100001.19::216881330410151584"
-               },
-               {
-                  "display": "/2.16.840.1.113883.3.42.126.100001.19::216881330410151584"
-               },
-               {
-                  "display": "/2.16.840.1.113883.3.42.126.100001.19::216881330410151584"
-               }
-            ],
-            "diagnosis": [
-               {
-                  "condition": {
-                     "display": "Condition/db734647-fc99-424c-a864-7e3cda82e704::urn:ietf:rfc:3986"
-                  }
-               }
-            ],
-            "id": "7f5bcda9-b43f-4ed7-bce5-e46833e332f8",
-            "type": [
-               {
-                  "coding": [
-                     {
-                        "system": "urn:oid:2.16.840.1.113883.6.12",
-                        "code": "99213",
-                        "display": "Office outpatient visit 15 minutes"
-                     }
-                  ],
-                  "text": "Office outpatient visit 15 minutes"
-               }
-            ],
-            "class": {
-               "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-               "code": "IMP",
-               "display": "inpatient encounter"
-            },
-            "participant": [
-               {
-                  "type": [
-                     {
-                        "coding": [
-                           {
-                              "system": "urn:oid:2.16.840.1.113883.6.101",
-                              "code": "207R00000X",
-                              "display": "Internal Medicine"
-                           }
-                        ],
-                        "text": "Internal Medicine"
-                     }
-                  ]
-               }
-            ],
-            "resourceType": "Encounter",
-            "status": "unknown"
-         },
-         "fullUrl": "Encounter/7f5bcda9-b43f-4ed7-bce5-e46833e332f8"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "ExplanationOfBenefit"
-         },
-         "resource": {
-            "provider": {
-               "display": "Practitioner/1.3.6.1.4.1.22812.3.2009316.3::92698"
-            },
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
-            },
-            "patient": {
-               "display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
-            },
-            "insurer": {
-               "display": "Organization/1.3.6.1.4.1.22812.3.2009316.3::3"
-            },
-            "id": "78c055dc-8d78-4ab5-b12d-b270bb170a31",
-            "resourceType": "ExplanationOfBenefit"
-         },
-         "fullUrl": "ExplanationOfBenefit/78c055dc-8d78-4ab5-b12d-b270bb170a31"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "DiagnosticReport"
-         },
-         "resource": {
-            "result": [
-               {
-                  "display": "/2.16.840.1.113883.19::123456789"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.20.1.1.4.5::13"
-               },
-               {
-                  "display": "/2.16.840.1.113883.3.42.126.100001.19::216881330410151584"
-               }
-            ],
-            "performer": [
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "/2.16.840.1.113883.4.6::1234123400"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "/2.16.840.1.113883.4.6::1234123400"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "/2.16.840.1.113883.4.6::1234123400"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.3.3::3"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.3.3::3"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.3.3::3"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "/2.16.840.1.113883.4.6::1234123400"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "/2.16.840.1.113883.4.6::1234123400"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "/2.16.840.1.113883.4.6::1234123400"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "/2.16.840.1.113883.4.6::1234123400"
-               }
-            ],
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
-            },
-            "subject": {
-               "display": "/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
-            },
-            "id": "30632075-f099-4e62-8679-e0383439cd34",
-            "encounter": {
-               "display": "/2a620155-9d11-439e-92b3-5d9815ff4de8::urn:ietf:rfc:3986"
-            },
-            "resourceType": "DiagnosticReport"
-         },
-         "fullUrl": "DiagnosticReport/30632075-f099-4e62-8679-e0383439cd34"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "Observation"
-         },
-         "resource": {
-            "identifier": [
-               {
-                  "system": "urn:oid:1.3.6.1.4.1.22812.20.1.1.4.5",
-                  "value": "13"
-               }
-            ],
-            "note": [
-               {
-                  "text": "Specific gravity of Urine by Test strip 1.015 Range: SDWG Example agreed to ID reference here since moving to td would mean text 'Range' is in observation 1.005 - 1.030"
-               }
-            ],
-            "code": {
-               "coding": [
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.1",
-                     "code": "5811-5",
-                     "display": "Specific gravity of Urine by Test strip"
-                  }
-               ],
-               "text": "Specific gravity of Urine by Test strip"
-            },
-            "effectiveDateTime": "2014-06-06T10:32-05:00",
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
-            },
-            "id": "6546a523-f384-4de4-9d4f-be344cc89b2a",
-            "category": [
-               {
-                  "coding": [
-                     {
-                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                        "code": "laboratory",
-                        "display": "Laboratory"
-                     }
-                  ],
-                  "text": "Laboratory"
-               }
-            ],
-            "resourceType": "Observation",
-            "status": "final",
-            "valueQuantity": {
-               "value": 1.015
-            }
-         },
-         "fullUrl": "Observation/6546a523-f384-4de4-9d4f-be344cc89b2a"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "Condition"
-         },
-         "resource": {
-            "identifier": [
-               {
-                  "system": "db734647-fc99-424c-a864-7e3cda82e704",
-                  "value": "urn:ietf:rfc:3986"
-               }
-            ],
-            "code": {
-               "coding": [
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.96",
-                     "code": "64109004",
-                     "display": "Costal Chondritis"
-                  }
-               ],
-               "text": "Costal Chondritis"
-            },
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
-            },
-            "subject": {
-               "display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
-            },
-            "id": "adfe2503-074f-4d07-992b-97a0e3386e59",
-            "category": [
-               {
-                  "coding": [
-                     {
-                        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-                        "code": "encounter-diagnosis",
-                        "display": "Encounter Diagnosis"
-                     }
-                  ],
-                  "text": "Encounter Diagnosis"
-               }
-            ],
-            "resourceType": "Condition"
-         },
-         "fullUrl": "Condition/adfe2503-074f-4d07-992b-97a0e3386e59"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "Observation"
-         },
-         "resource": {
-            "performer": [
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3::3"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "/2.16.840.1.113883.4.6::1234123400"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "/2.16.840.1.113883.4.6::1234123400"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "/2.16.840.1.113883.4.6::1234123400"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.3.3::3"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3::3"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.3.3::3"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3::3"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.3.3::3"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3::3"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3::3"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3::3"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "/2.16.840.1.113883.4.6::1234123400"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "/2.16.840.1.113883.4.6::1234123400"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "/2.16.840.1.113883.4.6::1234123400"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3::92698"
-               },
-               {
-                  "display": "/2.16.840.1.113883.4.6::1234123400"
-               }
-            ],
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
-            },
-            "subject": {
-               "display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
-            },
-            "id": "bd51d25f-13a0-4af3-a712-959c9a8d5e66",
-            "resourceType": "Observation"
-         },
-         "fullUrl": "Observation/bd51d25f-13a0-4af3-a712-959c9a8d5e66"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "Procedure"
-         },
-         "resource": {
-            "partOf": [
-               {
-                  "display": "/2.16.840.1.113883.19::123456789"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.20.1.1.4.5::13"
-               },
-               {
-                  "display": "/2.16.840.1.113883.3.42.126.100001.19::216881330410151584"
-               }
-            ],
-            "complicationDetail": [
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545069300001"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545069300001"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545069300001"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545069300001"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545077400017"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545077400019"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545077400017"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545077400019"
-               },
-               {
-                  "display": "/db734647-fc99-424c-a864-7e3cda82e704::urn:ietf:rfc:3986"
-               },
-               {
-                  "display": "/db734647-fc99-424c-a864-7e3cda82e704::urn:ietf:rfc:3986"
-               },
-               {
-                  "display": "/db734647-fc99-424c-a864-7e3cda82e704::urn:ietf:rfc:3986"
-               }
-            ],
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
-            },
-            "reasonReference": [
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545069300001"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545069300001"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545069300001"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545069300001"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545077400017"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545077400019"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545077400017"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545077400019"
-               },
-               {
-                  "display": "/db734647-fc99-424c-a864-7e3cda82e704::urn:ietf:rfc:3986"
-               },
-               {
-                  "display": "/db734647-fc99-424c-a864-7e3cda82e704::urn:ietf:rfc:3986"
-               },
-               {
-                  "display": "/db734647-fc99-424c-a864-7e3cda82e704::urn:ietf:rfc:3986"
-               }
-            ],
-            "id": "c5f3f188-746d-4204-9476-1cc91846bb02",
-            "resourceType": "Procedure"
-         },
-         "fullUrl": "Procedure/c5f3f188-746d-4204-9476-1cc91846bb02"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "Immunization"
-         },
-         "resource": {
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
-            },
-            "reasonReference": [
-               {
-                  "display": "Condition/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545069300001"
-               },
-               {
-                  "display": "Condition/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545069300001"
-               },
-               {
-                  "display": "Condition/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545069300001"
-               },
-               {
-                  "display": "Condition/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545069300001"
-               },
-               {
-                  "display": "Condition/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545077400017"
-               },
-               {
-                  "display": "Condition/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545077400019"
-               },
-               {
-                  "display": "Condition/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545077400017"
-               },
-               {
-                  "display": "Condition/1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1::545077400019"
-               },
-               {
-                  "display": "Condition/db734647-fc99-424c-a864-7e3cda82e704::urn:ietf:rfc:3986"
-               },
-               {
-                  "display": "Condition/db734647-fc99-424c-a864-7e3cda82e704::urn:ietf:rfc:3986"
-               },
-               {
-                  "display": "Condition/db734647-fc99-424c-a864-7e3cda82e704::urn:ietf:rfc:3986"
-               }
-            ],
-            "id": "bcef0a12-dea1-444f-91e3-21ee8dfda982",
-            "resourceType": "Immunization"
-         },
-         "fullUrl": "Immunization/bcef0a12-dea1-444f-91e3-21ee8dfda982"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "Condition"
-         },
-         "resource": {
-            "identifier": [
-               {
-                  "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1",
-                  "value": "545069300001"
-               },
-               {
-                  "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1",
-                  "value": "545069300001"
-               },
-               {
-                  "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1",
-                  "value": "545077400017"
-               },
-               {
-                  "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1",
-                  "value": "545077400019"
-               },
-               {
-                  "system": "db734647-fc99-424c-a864-7e3cda82e704",
-                  "value": "urn:ietf:rfc:3986"
-               },
-               {
-                  "system": "db734647-fc99-424c-a864-7e3cda82e704",
-                  "value": "urn:ietf:rfc:3986"
-               }
-            ],
-            "note": [
-               {
-                  "text": "Pneumonia"
-               },
-               {
-                  "text": "Asthma"
-               }
-            ],
-            "code": {
-               "coding": [
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.96",
-                     "code": "233604007"
-                  },
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.103",
-                     "code": "486"
-                  },
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.90",
-                     "code": "J18.9"
-                  },
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.3.247.1.1",
-                     "code": "87580"
-                  }
-               ],
-               "text": "Pneumonia"
-            },
-            "evidence": [
-               {
-                  "code": [
-                     {
-                        "coding": [
-                           {
-                              "system": "urn:oid:2.16.840.1.113883.6.96",
-                              "code": "282291009",
-                              "display": "Diagnosis"
-                           },
-                           {
-                              "system": "urn:oid:2.16.840.1.113883.6.1",
-                              "code": "29308-4",
-                              "display": "Diagnosis"
-                           }
-                        ],
-                        "text": "Diagnosis"
-                     }
-                  ]
-               }
-            ],
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
-            },
-            "id": "4090ba7d-f917-412f-8205-944cd243ef2f",
-            "category": [
-               {
-                  "coding": [
-                     {
-                        "system": "urn:oid:2.16.840.1.113883.6.96",
-                        "code": "55607006"
-                     }
-                  ]
-               },
-               {
-                  "coding": [
-                     {
-                        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-                        "code": "problem-list-item",
-                        "display": "Problem List Item"
-                     }
-                  ],
-                  "text": "Problem List Item"
-               },
-               {
-                  "coding": [
-                     {
-                        "system": "urn:oid:2.16.840.1.113883.6.96",
-                        "code": "55607006"
-                     }
-                  ]
-               },
-               {
-                  "coding": [
-                     {
-                        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-                        "code": "problem-list-item",
-                        "display": "Problem List Item"
-                     }
-                  ],
-                  "text": "Problem List Item"
-               },
-               {
-                  "coding": [
-                     {
-                        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-                        "code": "encounter-diagnosis",
-                        "display": "Encounter Diagnosis"
-                     }
-                  ],
-                  "text": "Encounter Diagnosis"
-               },
-               {
-                  "coding": [
-                     {
-                        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-                        "code": "encounter-diagnosis",
-                        "display": "Encounter Diagnosis"
-                     }
-                  ],
-                  "text": "Encounter Diagnosis"
-               }
-            ],
-            "onsetDateTime": "2012-08-06",
-            "resourceType": "Condition"
-         },
-         "fullUrl": "Condition/4090ba7d-f917-412f-8205-944cd243ef2f"
-      },
-      {
-         "request": {
-            "method": "POST",
-            "url": "MedicationAdministration"
-         },
-         "resource": {
-            "identifier": [
-               {
-                  "system": "cdbd33f0-6cde-11db-9fe1-0800200c9a66",
-                  "value": "urn:ietf:rfc:3986"
-               }
-            ],
-            "performer": [
-               {
-                  "actor": {
-                     "display": "/2.16.840.1.113883.4.6::2222222222"
-                  }
-               }
-            ],
-            "effectiveDateTime": "2012-08-06",
-            "meta": {
-               "tag": [
-                  {
-                     "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-                     "code": "SUBSETTED",
-                     "display": "Resource encoded in summary mode"
-                  }
-               ]
-            },
-            "reasonReference": [
-               {
-                  "display": "/2.16.840.1.113883.19::123456789"
-               },
-               {
-                  "display": "/2.16.840.1.113883.19::123456789"
-               },
-               {
-                  "display": "/2.16.840.1.113883.19::123456789"
-               },
-               {
-                  "display": "/2.16.840.1.113883.19::123456789"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.20.1.1.4.5::13"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.20.1.1.4.5::13"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.20.1.1.4.5::13"
-               },
-               {
-                  "display": "/1.3.6.1.4.1.22812.20.1.1.4.5::13"
-               },
-               {
-                  "display": "/2.16.840.1.113883.3.42.126.100001.19::216881330410151584"
-               },
-               {
-                  "display": "/2.16.840.1.113883.3.42.126.100001.19::216881330410151584"
-               },
-               {
-                  "display": "/2.16.840.1.113883.3.42.126.100001.19::216881330410151584"
-               },
-               {
-                  "display": "/2.16.840.1.113883.3.42.126.100001.19::216881330410151584"
-               }
-            ],
-            "id": "urn:ietf:rfc:3986",
-            "medicationCodeableConcept": {
-               "coding": [
-                  {
-                     "system": "urn:oid:2.16.840.1.113883.6.88",
-                     "code": "582498",
-                     "display": "Albuterol 0.09 MG/ACTUAT inhalant powder"
-                  }
-               ],
-               "text": "Albuterol 0.09 MG/ACTUAT inhalant powder"
-            },
-            "resourceType": "MedicationAdministration",
-            "status": "in-progress"
-         },
-         "fullUrl": "MedicationAdministration/urn:ietf:rfc:3986"
-      }
-   ],
-   "meta": {
-      "tag": [
-         {
-            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-            "code": "SUBSETTED",
-            "display": "Resource encoded in summary mode"
-         }
-      ]
-   },
-   "type": "transaction",
-   "resourceType": "Bundle"
+        ]
+    },
+    "type": "transaction",
+    "resourceType": "Bundle"
 }
