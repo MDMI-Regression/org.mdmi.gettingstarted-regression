@@ -147,7 +147,21 @@ class TestCDA2FHIR {
 				runTransformation( "CDAR2.ContinuityOfCareDocument","FHIRR4JSON.MasterBundle", document,"json");			 
 		}
 	}
- 
- 
+	
+	@Test
+	public void testResultsSectionPQ() throws Exception {
+		Set<String> documents = Stream.of(new File("src/test/resources/source/PQTest").listFiles()).filter(
+			file -> !file.isDirectory()).map(t -> {
+				try {
+					return t.getCanonicalPath();
+				} catch (IOException e) {
+					return "";
+				}
+			}).collect(Collectors.toSet());
+
+		for (String document: documents) {					
+				runTransformation( "CDAR2.ContinuityOfCareDocument","FHIRR4JSON.MasterBundle", document,"json");			 
+		}
+	}
 
 }
