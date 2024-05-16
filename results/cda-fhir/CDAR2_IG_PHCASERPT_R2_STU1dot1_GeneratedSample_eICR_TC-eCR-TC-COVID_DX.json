@@ -1,0 +1,250 @@
+{
+	"identifier": {
+		"system": "urn:ietf:rfc:3986",
+		"value": "38e6a983-38ad-484f-a7d2-b294cdbe5435"
+	},
+	"entry": [
+		{
+			"request": {
+				"method": "POST",
+				"url": "Practitioner"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "2.16.840.1.113883.3.72.5.20"
+					}
+				],
+				"address": [
+					{
+						"city": "Sacramento",
+						"use": "work",
+						"line": [
+							"1234 Facility Drive"
+						],
+						"postalCode": "94203",
+						"state": "CA"
+					}
+				],
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"telecom": [
+					{
+						"system": "phone",
+						"use": "work",
+						"value": "555-777-0123"
+					},
+					{
+						"system": "fax",
+						"use": "work",
+						"value": "555-777-0987"
+					}
+				],
+				"id": "f379d831-2482-411e-847b-11bbae359fe3",
+				"resourceType": "Practitioner"
+			},
+			"fullUrl": "Practitioner/f379d831-2482-411e-847b-11bbae359fe3"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Patient"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:2.16.840.1.113883.19.5",
+						"value": "PT-470127"
+					},
+					{
+						"system": "urn:oid:2.16.840.1.113883.4.1",
+						"value": "222-22-2222"
+					}
+				],
+				"extension": [
+					{
+						"extension": [
+							{
+								"valueCoding": {
+									"system": "2.16.840.1.113883.6.238",
+									"code": "2106-3",
+									"display": "WHITE"
+								},
+								"url": "ombCategory"
+							},
+							{
+								"valueString": "WHITE",
+								"url": "text"
+							},
+							{
+								"valueCoding": {
+									"system": "2.16.840.1.113883.6.238",
+									"code": "2106-3",
+									"display": "WHITE"
+								},
+								"url": "detailed"
+							}
+						],
+						"url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+					},
+					{
+						"extension": [
+							{
+								"valueCoding": {
+									"system": "2.16.840.1.113883.6.238",
+									"code": "2135-2",
+									"display": "Hispanic or Latino"
+								},
+								"url": "ombCategory"
+							},
+							{
+								"valueString": "Hispanic or Latino",
+								"url": "text"
+							},
+							{
+								"valueCoding": {
+									"system": "2.16.840.1.113883.6.238",
+									"code": "2135-2",
+									"display": "Hispanic or Latino"
+								},
+								"url": "detailed"
+							}
+						],
+						"url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+					}
+				],
+				"deceasedBoolean": false,
+				"address": [
+					{
+						"country": "US",
+						"city": "Sacramento",
+						"use": "home",
+						"line": [
+							"2222 Home Street"
+						],
+						"district": "Sacramento County",
+						"postalCode": "94203",
+						"state": "CA"
+					}
+				],
+				"gender": "male",
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"name": [
+					{
+						"given": [
+							"Jose"
+						],
+						"use": "usual",
+						"family": "Cuervo"
+					}
+				],
+				"telecom": [
+					{
+						"system": "phone",
+						"use": "home",
+						"value": "555-555-2003"
+					},
+					{
+						"system": "email",
+						"use": "home",
+						"value": "jose@email.com"
+					}
+				],
+				"id": "75e93562-3ab3-423d-9c95-e25949b99848",
+				"communication": [
+					{
+						"language": {
+							"coding": [
+								{
+									"system": "urn:ietf:bcp:47",
+									"code": "es"
+								}
+							]
+						},
+						"preferred": true
+					}
+				],
+				"birthDate": "1989-07-30",
+				"resourceType": "Patient"
+			},
+			"fullUrl": "Patient/75e93562-3ab3-423d-9c95-e25949b99848"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Organization"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:2.16.840.1.113883.4.6",
+						"value": "TBDFacility#"
+					}
+				],
+				"address": [
+					{
+						"city": "Sacramento",
+						"use": "work",
+						"line": [
+							"1234 Facility Drive"
+						],
+						"postalCode": "94203",
+						"state": "CA"
+					}
+				],
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"contact": [
+					{
+						"telecom": [
+							{
+								"system": "phone",
+								"use": "work",
+								"value": "555-777-0123"
+							}
+						]
+					}
+				],
+				"name": "Sacramento Hospital",
+				"id": "c98d0b6d-ace2-488c-a2c4-242eb889c3b1",
+				"resourceType": "Organization"
+			},
+			"fullUrl": "Organization/c98d0b6d-ace2-488c-a2c4-242eb889c3b1"
+		}
+	],
+	"meta": {
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"type": "transaction",
+	"resourceType": "Bundle",
+	"timestamp": "2020-05-05T11:05:15-04:00"
+}
