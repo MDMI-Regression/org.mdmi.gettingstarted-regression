@@ -44,6 +44,8 @@
                     <code code="POWATT" displayName="Power of Attorney" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" />
                     <addr use="H">
                         <streetAddressLine>123 main street</streetAddressLine>
+                        <streetAddressLine>Line 2</streetAddressLine>
+                        <streetAddressLine>Line 3</streetAddressLine>
                         <city>Beaverton</city>
                         <state>OR</state>
                         <postalCode>97867</postalCode>
