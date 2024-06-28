@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3"
+                  xmlns:cda="urn:hl7-org:v3"
+                  xmlns:sdtc="urn:hl7-org:sdtc"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <realmCode code="US" />
+   <typeId nullFlavor="UNK" />
+   <templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.1.2" />
+   <templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.1.1" />
+   <id extension="973c7e16-05dd-484f-a780-e80904fd8ff0" root="urn:ietf:rfc:3986" />
+   <code nullFlavor="UNK" />
+   <title />
+   <effectiveTime nullFlavor="UNK" />
+   <confidentialityCode nullFlavor="UNK" />
+   <languageCode nullFlavor="UNK" />
+   <author>
+      <time nullFlavor="UNK" />
+      <assignedAuthor extension="1234123400" root="2.16.840.1.113883.4.6">
+         <id />
+         <id />
+         <id />
+         <id />
+         <id />
+         <id />
+         <id />
+         <id />
+         <id />
+         <id />
+         <id />
+         <id />
+         <id />
+         <id />
+         <id />
+         <id />
+         <id />
+         <id />
+         <addr use="H">
+            <city>Chicago</city>
+            <postalCode>60629</postalCode>
+            <state>IL</state>
+            <streetAddressLine>undefined</streetAddressLine>
+         </addr>
+         <addr use="H">
+            <city>Chicago</city>
+            <postalCode>60629</postalCode>
+            <state>IL</state>
+            <streetAddressLine>undefined</streetAddressLine>
+         </addr>
+         <addr use="H">
+            <city>Chicago</city>
+            <postalCode>60629</postalCode>
+            <state>IL</state>
+            <streetAddressLine>undefined</streetAddressLine>
+         </addr>
+         <addr use="H">
+            <city>Chicago</city>
+            <postalCode>60629</postalCode>
+            <state>IL</state>
+            <streetAddressLine>undefined</streetAddressLine>
+         </addr>
+         <addr use="H">
+            <city>Chicago</city>
+            <postalCode>60629</postalCode>
+            <state>IL</state>
+            <streetAddressLine>undefined</streetAddressLine>
+         </addr>
+         <addr use="H">
+            <city>Chicago</city>
+            <postalCode>60629</postalCode>
+            <state>IL</state>
+            <streetAddressLine>undefined</streetAddressLine>
+         </addr>
+         <addr use="H">
+            <city>Chicago</city>
+            <postalCode>60629</postalCode>
+            <state>IL</state>
+            <streetAddressLine>undefined</streetAddressLine>
+         </addr>
+         <addr use="H">
+            <city>Chicago</city>
+            <postalCode>60629</postalCode>
+            <state>IL</state>
+            <streetAddressLine>undefined</streetAddressLine>
+         </addr>
+         <addr use="H">
+            <city>Chicago</city>
+            <postalCode>60629</postalCode>
+            <state>IL</state>
+            <streetAddressLine>undefined</streetAddressLine>
+         </addr>
+         <addr use="H">
+            <city>Chicago</city>
+            <postalCode>60629</postalCode>
+            <state>IL</state>
+            <streetAddressLine>undefined</streetAddressLine>
+         </addr>
+         <addr use="H">
+            <city>Chicago</city>
+            <postalCode>60629</postalCode>
+            <state>IL</state>
+            <streetAddressLine>undefined</streetAddressLine>
+         </addr>
+         <addr use="H">
+            <city>Chicago</city>
+            <postalCode>60629</postalCode>
+            <state>IL</state>
+            <streetAddressLine>undefined</streetAddressLine>
+         </addr>
+         <addr use="H">
+            <city>Chicago</city>
+            <postalCode>60629</postalCode>
+            <state>IL</state>
+            <streetAddressLine>undefined</streetAddressLine>
+         </addr>
+         <addr use="H">
+            <city>Chicago</city>
+            <postalCode>60629</postalCode>
+            <state>IL</state>
+            <streetAddressLine>undefined</streetAddressLine>
+         </addr>
+         <addr use="H">
+            <city>Chicago</city>
+            <postalCode>60629</postalCode>
+            <state>IL</state>
+            <streetAddressLine>undefined</streetAddressLine>
+         </addr>
+         <addr use="H">
+            <city>Chicago</city>
+            <postalCode>60629</postalCode>
+            <state>IL</state>
+            <streetAddressLine>undefined</streetAddressLine>
+         </addr>
+         <addr use="H">
+            <city>Chicago</city>
+            <postalCode>60629</postalCode>
+            <state>IL</state>
+            <streetAddressLine>undefined</streetAddressLine>
+         </addr>
+         <addr use="H">
+            <city>Chicago</city>
+            <postalCode>60629</postalCode>
+            <state>IL</state>
+            <streetAddressLine>undefined</streetAddressLine>
+         </addr>
+         <telecom use="WP" value="mailto:provider@allsripts.com" />
+         <telecom use="WP" value="mailto:provider@allsripts.com" />
+         <telecom use="WP" value="mailto:provider@allsripts.com" />
+         <telecom use="WP" value="mailto:provider@allsripts.com" />
+         <telecom use="WP" value="mailto:provider@allsripts.com" />
+         <telecom use="WP" value="mailto:provider@allsripts.com" />
+         <telecom use="WP" value="mailto:provider@allsripts.com" />
+         <telecom use="WP" value="mailto:provider@allsripts.com" />
+         <telecom use="WP" value="mailto:provider@allsripts.com" />
+         <telecom use="WP" value="tel:+1-(676)857-6769" />
+         <telecom use="WP" value="tel:+1-(676)857-6769" />
+         <telecom use="WP" value="tel:+1-(676)857-6769" />
+         <telecom use="WP" value="tel:+1-(676)857-6769" />
+         <telecom use="WP" value="tel:+1-(676)857-6769" />
+         <telecom use="WP" value="tel:+1-(676)857-6769" />
+         <telecom use="WP" value="tel:+1-(676)857-6769" />
+         <telecom use="WP" value="tel:+1-(676)857-6769" />
+         <telecom use="WP" value="tel:+1-(676)857-6769" />
+         <assignedPerson>
+            <name>
+               <family>abc</family>
+               <given>Provider</given>
+            </name>
+            <name>
+               <family>abc</family>
+               <given>Provider</given>
+            </name>
+            <name>
+               <family>abc</family>
+               <given>Provider</given>
+            </name>
+            <name>
+               <family>abc</family>
+               <given>Provider</given>
+            </name>
+            <name>
+               <family>abc</family>
+               <given>Provider</given>
+            </name>
+            <name>
+               <family>abc</family>
+               <given>Provider</given>
+            </name>
+            <name>
+               <family>abc</family>
+               <given>Provider</given>
+            </name>
+            <name>
+               <family>abc</family>
+               <given>Provider</given>
+            </name>
+            <name>
+               <family>abc</family>
+               <given>Provider</given>
+            </name>
+         </assignedPerson>
+         <representedOrganization>
+            <id extension="3" root="1.3.6.1.4.1.22812.3.2009316.3" />
+            <id extension="3" root="1.3.6.1.4.1.22812.3.2009316.3" />
+            <id extension="3" root="1.3.6.1.4.1.22812.3.2009316.3" />
+            <id extension="3" root="1.3.6.1.4.1.22812.3.2009316.3" />
+            <id extension="3" root="1.3.6.1.4.1.22812.3.2009316.3" />
+            <id extension="3" root="1.3.6.1.4.1.22812.3.2009316.3" />
+            <name>Primary Care's Partners Test</name>
+            <addr use="H">
+               <city>Chicago</city>
+               <postalCode>60629</postalCode>
+               <state>IL</state>
+               <streetAddressLine>undefined</streetAddressLine>
+            </addr>
+            <addr use="H">
+               <city>Chicago</city>
+               <postalCode>60629</postalCode>
+               <state>IL</state>
+               <streetAddressLine>undefined</streetAddressLine>
+            </addr>
+            <addr use="H">
+               <city>Chicago</city>
+               <postalCode>60629</postalCode>
+               <state>IL</state>
+               <streetAddressLine>undefined</streetAddressLine>
+            </addr>
+            <addr use="H">
+               <city>Chicago</city>
+               <postalCode>60629</postalCode>
+               <state>IL</state>
+               <streetAddressLine>undefined</streetAddressLine>
+            </addr>
+            <addr use="H">
+               <city>Chicago</city>
+               <postalCode>60629</postalCode>
+               <state>IL</state>
+               <streetAddressLine>undefined</streetAddressLine>
+            </addr>
+            <addr use="H">
+               <city>Chicago</city>
+               <postalCode>60629</postalCode>
+               <state>IL</state>
+               <streetAddressLine>undefined</streetAddressLine>
+            </addr>
+         </representedOrganization>
+      </assignedAuthor>
+   </author>
+   <author>
+      <time nullFlavor="UNK" />
+   </author>
+   <author>
+      <time nullFlavor="UNK" />
+      <assignedAuthor nullFlavor="UNK">
+         <id />
+         <addr nullFlavor="UNK" />
+         <telecom nullFlavor="UNK" />
+         <representedOrganization>
+            <id extension="3" root="1.3.6.1.4.1.22812.3.2009316.3" />
+            <name>Primary Care's Partners Test</name>
+            <addr use="H">
+               <city>Chicago</city>
+               <postalCode>60629</postalCode>
+               <state>IL</state>
+               <streetAddressLine>undefined</streetAddressLine>
+            </addr>
+         </representedOrganization>
+      </assignedAuthor>
+   </author>
+   <dataEnterer />
+   <informant />
+   <informant />
+   <informant />
+   <custodian />
+   <legalAuthenticator>
+      <time nullFlavor="UNK" />
+      <time nullFlavor="UNK" />
+      <time nullFlavor="UNK" />
+      <signatureCode code="S" />
+      <signatureCode code="S" />
+      <signatureCode code="S" />
+   </legalAuthenticator>
+   <authenticator>
+      <time nullFlavor="UNK" />
+      <signatureCode code="S" />
+   </authenticator>
+   <authenticator>
+      <time nullFlavor="UNK" />
+      <signatureCode code="S" />
+   </authenticator>
+   <authenticator>
+      <time nullFlavor="UNK" />
+      <signatureCode code="S" />
+   </authenticator>
+   <documentationOf>
+      <serviceEvent>
+         <effectiveTime nullFlavor="UNK" />
+         <performer />
+         <performer />
+         <performer>
+            <assignedEntity>
+               <id nullFlavor="UNK" />
+               <representedOrganization>
+                  <id extension="3" root="1.3.6.1.4.1.22812.3.2009316.3" />
+                  <name>Primary Care's Partners Test</name>
+                  <telecom use="WP" value="tel:+1-(676)857-6769" />
+                  <addr use="H">
+                     <city>Chicago</city>
+                     <postalCode>60629</postalCode>
+                     <state>IL</state>
+                     <streetAddressLine>undefined</streetAddressLine>
+                  </addr>
+               </representedOrganization>
+            </assignedEntity>
+         </performer>
+      </serviceEvent>
+   </documentationOf>
+   <component>
+      <structuredBody>
+         <component>
+            <section xmlns="urn:hl7-org:v3">
+               <templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.2.6.1" />
+               <templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.2.6" />
+               <code nullFlavor="UNK" />
+               <title />
+               <text>
+                  <html xmlns:n1="urn:hl7-org:v3">
+                     <body>
+                        <h2 />
+                        <table border="1">
+                           <tr>
+                              <td width="100%">
+                                 <table border="2">
+                                    <thead>
+                                       <tr>
+                                          <th>Type</th>
+                                          <th>Description</th>
+                                          <th>Effective Date</th>
+                                          <th>Status</th>
+                                       </tr>
+                                    </thead>
+                                    <tr>
+                                       <td />
+                                       <td />
+                                       <td />
+                                       <td />
+                                    </tr>
+                                    <tr>
+                                       <td />
+                                       <td />
+                                       <td />
+                                       <td />
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </body>
+                  </html>
+               </text>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <id nullFlavor="UNK" />
+                     <templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.30" />
+                     <templateId root="2.16.840.1.113883.10.20.22.4.30" />
+                     <id nullFlavor="UNK" />
+                     <code nullFlavor="UNK" />
+                     <effectiveTime nullFlavor="UNK" />
+                     <entryRelationship inversionInd="true" typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <templateId extension="2014-06-09" root="2.16.840.1.113883.10.20.22.4.7" />
+                           <templateId root="2.16.840.1.113883.10.20.22.4.7" />
+                           <id nullFlavor="UNK" />
+                           <code nullFlavor="UNK" />
+                           <statusCode nullFlavor="UNK" />
+                           <effectiveTime nullFlavor="UNK" />
+                           <value nullFlavor="UNK" />
+                           <author>
+                              <templateId root="2.16.840.1.113883.10.20.22.4.119" />
+                              <templateId root="2.16.840.1.113883.10.20.22.4.119" />
+                              <time nullFlavor="UNK" />
+                              <time nullFlavor="UNK" />
+                           </author>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section xmlns="urn:hl7-org:v3">
+               <templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.2.2.1" />
+               <templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.2.2" />
+               <code nullFlavor="UNK" />
+               <title>Immunizations</title>
+               <text>
+                  <html xmlns:n1="urn:hl7-org:v3">
+                     <body>
+                        <h2>Immunizations</h2>
+                        <table border="1">
+                           <tr>
+                              <td width="100%">
+                                 <table border="2">
+                                    <thead>
+                                       <tr>
+                                          <th>Medication</th>
+                                          <th>Instructions</th>
+                                          <th>Effective Date</th>
+                                          <th>Status</th>
+                                       </tr>
+                                    </thead>
+                                    <tr>
+                                       <td />
+                                       <td />
+                                       <td />
+                                       <td />
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </body>
+                  </html>
+               </text>
+               <entry>
+                  <substanceAdministration classCode="SBADM" negationInd="">
+                     <templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.52" />
+                     <templateId root="2.16.840.1.113883.10.20.22.4.52" />
+                     <id nullFlavor="UNK" />
+                     <statusCode nullFlavor="UNK" />
+                     <effectiveTime nullFlavor="UNK" />
+                     <performer />
+                  </substanceAdministration>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section xmlns="urn:hl7-org:v3">
+               <templateId extension="2019-07-01" root="2.16.840.1.113883.10.20.22.2.500" />
+               <templateId root="2.16.840.1.113883.10.20.22.2.500" />
+               <code nullFlavor="UNK" />
+               <title />
+               <text>
+                  <html xmlns:n1="urn:hl7-org:v3">
+                     <body>
+                        <h2 />
+                        <table border="1">
+                           <tr>
+                              <td width="100%">
+                                 <table border="2">
+                                    <thead>
+                                       <tr>
+                                          <th>Medication</th>
+                                          <th>Instructions</th>
+                                          <th>Start Date</th>
+                                          <th>Stop Date</th>
+                                          <th>Status</th>
+                                       </tr>
+                                    </thead>
+                                    <tr>
+                                       <td />
+                                       <td />
+                                       <td />
+                                       <td />
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </body>
+                  </html>
+               </text>
+               <entry>
+                  <organizer classCode="CLUSTER" moodCode="EVN">
+                     <templateId extension="2019-07-01" root="2.16.840.1.113883.10.20.22.4.500" />
+                     <templateId root="2.16.840.1.113883.10.20.22.4.500" />
+                     <id nullFlavor="UNK" />
+                     <code nullFlavor="UNK" />
+                     <component>
+                        <act classCode="ACT" moodCode="EVN">
+                           <id nullFlavor="UNK" />
+                           <code nullFlavor="UNK" />
+                           <statusCode nullFlavor="UNK" />
+                           <performer />
+                        </act>
+                     </component>
+                  </organizer>
+               </entry>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</ClinicalDocument>

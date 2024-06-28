@@ -14,7 +14,7 @@ preprocessors:
        name: SBHADeliminated2XML
        class: org.mdmi.processors.apex.APEXDeliminated2XML
        groups:
-         - SBHA
+         - APEX
     fhir:
        name: PreProcessorForFHIRJson
        class: org.mdmi.processors.fhir.PreProcessorForFHIRJson

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="cda.xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3"
+    xmlns:sdtc="urn:hl7-org:sdtc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <realmCode code="US" />
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+    <templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01" />
+    <templateId root="2.16.840.1.113883.10.20.22.1.2" />
+    <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01" />
+    <templateId root="2.16.840.1.113883.10.20.22.1.1" />
+    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.5.5.1" />
+    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.5.5.2" />
+    <id root="973c7e16-05dd-484f-a780-e80904fd8ff0" />
+    <code code="34133-9" codeSystem="2.16.840.1.113883.6.1" />
+    <title>Continuity of Care Document</title>
+    <effectiveTime value="20161003182710+0000" />
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" />
+    <languageCode code="en-US" />
+    <author>
+        <time value="20161003182710+0000" />
+        <assignedAuthor>
+            <id extension="3" root="1.3.6.1.4.1.22812.3.2009316.3.3.3" />
+            <addr use="H">
+                <streetAddressLine>123 main street</streetAddressLine>
+                <city>Chicago</city>
+                <state>IL</state>
+                <postalCode>60629</postalCode>
+            </addr>
+            <telecom use="WP" value="tel:+1-(676)857-6769" />
+            <assignedAuthoringDevice>
+                <manufacturerModelName> 17.100.578.0</manufacturerModelName>
+                <softwareName> 17.100.578.0</softwareName>
+            </assignedAuthoringDevice>
+            <representedOrganization>
+                <id extension="3" root="1.3.6.1.4.1.22812.3.2009316.3" />
+                <name>Primary Care's Partners Test</name>
+                <telecom use="WP" value="tel:+1-(676)857-6769" />
+                <addr use="H">
+                    <streetAddressLine>123 main street</streetAddressLine>
+                    <city>Chicago</city>
+                    <state>IL</state>
+                    <postalCode>60629</postalCode>
+                </addr>
+            </representedOrganization>
+        </assignedAuthor>
+    </author>
+</ClinicalDocument>
