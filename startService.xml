@@ -9,6 +9,7 @@
 	<arg value="-f"/>
 	<arg value="docker-compose-local.yml"/>
 	<arg value="up"/>
+	<arg value="-d" />
 </exec>
 </target>
 
