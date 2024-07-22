@@ -57,6 +57,7 @@ class TestCDA2FHIR {
 	@BeforeAll
 	public static void setEnvironment() {
 		System.setProperty("mdmi.maps", "src/main/resources/maps");
+		System.setProperty("LOGGING_LEVEL_MDMI","TRACE");
 	}
 
 	private String runTransformation(String source, String target, String message,String extension) throws Exception {
