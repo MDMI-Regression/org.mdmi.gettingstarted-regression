@@ -100,6 +100,21 @@ class TestFHIR2CDA {
 		}
 	}
 	
+	@Test
+	public void testFHIR2CDABundle() throws Exception {
+		Set<String> documents = Stream.of(new File("src/test/fhir/Bundle").listFiles()).filter(
+			file -> !file.isDirectory()).map(t -> {
+				try {
+					return t.getCanonicalPath();
+				} catch (IOException e) {
+					return "";
+				}
+			}).collect(Collectors.toSet());
+
+		for (String document: documents) {					
+				runTransformation("FHIRR4JSON.MasterBundleReference", "CDAR2.ContinuityOfCareDocument", document,"xml");			 
+		}
+	}
 	 
 	@Test
 	public void testFHIR2CDADemographics2() throws Exception {
