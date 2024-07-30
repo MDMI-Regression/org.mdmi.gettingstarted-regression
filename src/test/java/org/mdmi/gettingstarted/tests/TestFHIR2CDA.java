@@ -57,6 +57,7 @@ class TestFHIR2CDA {
 	@BeforeAll
 	public static void setEnvironment() {
 		System.setProperty("mdmi.maps", "src/main/resources/maps");
+		System.setProperty("LOGGING_LEVEL_MDMI","TRACE");
 	}
 
 	private String runTransformation(String source, String target, String message,String extension) throws Exception {
@@ -115,7 +116,39 @@ class TestFHIR2CDA {
 				runTransformation("FHIRR4JSON.MasterBundleReference", "CDAR2.ContinuityOfCareDocument", document,"xml");			 
 		}
 	}
-	 
+	
+	@Test
+	public void testFHIR2CDAPatient() throws Exception {
+		Set<String> documents = Stream.of(new File("src/test/fhir/Patient").listFiles()).filter(
+			file -> !file.isDirectory()).map(t -> {
+				try {
+					return t.getCanonicalPath();
+				} catch (IOException e) {
+					return "";
+				}
+			}).collect(Collectors.toSet());
+
+		for (String document: documents) {					
+				runTransformation("FHIRR4JSON.MasterBundleReference", "CDAR2.ContinuityOfCareDocument", document,"xml");			 
+		}
+	}
+	
+	@Test
+	public void testFHIR2CDAPatientIssues() throws Exception {
+		Set<String> documents = Stream.of(new File("src/test/fhir/PatientIssues").listFiles()).filter(
+			file -> !file.isDirectory()).map(t -> {
+				try {
+					return t.getCanonicalPath();
+				} catch (IOException e) {
+					return "";
+				}
+			}).collect(Collectors.toSet());
+
+		for (String document: documents) {					
+				runTransformation("FHIRR4JSON.MasterBundleReference", "CDAR2.ContinuityOfCareDocument", document,"xml");			 
+		}
+	}
+	
 	@Test
 	public void testFHIR2CDADemographics2() throws Exception {
 		Set<String> documents = Stream.of(new File("src/test/resources/source/fhir2cdademographics").listFiles()).filter(

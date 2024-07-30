@@ -41,7 +41,9 @@
                 <ethnicGroupCode code="2135-2" codeSystem="2.16.840.1.113883.6.238" displayName="Hispanic or Latino" />
                 <sdtc:ethnicGroupCode code="20146-9" displayName="Spanish Basque" codeSystem="2.16.840.1.113883.6.238" />
                 <guardian>
-                    <code code="POWATT" displayName="Power of Attorney" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" />
+                    <!--  original version for the vendors:                   <code code="POWATT" displayName="Power of Attorney" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" />-->
+                    <!-- This was updated to the following "FTH" code as the "POWATT" was deemed more appropriate as participant, per feedback during vendors' mapping alignment meeting on 7/9/2024-->
+                    <code code="FTH" displayName="father" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" />
                     <addr use="H">
                         <streetAddressLine>123 main street</streetAddressLine>
                         <city>Beaverton</city>
@@ -806,7 +808,6 @@
                                                     <templateId root="2.16.840.1.113883.10.20.22.4.23" 
                                                             extension="2014-06-09"/>
                                             <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
-
                                                     <id root="7f92b43e-9ddb-11ee-8c90-0242ac120002"/>
                                                     <manufacturedMaterial>
                                                         <code code="1049901"  
@@ -1008,7 +1009,7 @@
                                 <high nullFlavor="UNK"/>
                             </effectiveTime>
                             <effectiveTime xsi:type="PIVL_TS" operator="A">
-                                <period>
+                                <period xsi:type="IVL_PQ">
                                     <low value="4" unit="h"/>
                                     <high value="6" unit="h"/>
                                 </period>
@@ -1109,7 +1110,8 @@
                                     <!-- Instruction (V2) -->
                                     <templateId root="2.16.840.1.113883.10.20.22.4.20" extension="2014-06-09"/>
                                     <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                                    <code code="422037009" displayName="Provider medication administration instructions" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                                    <code code="1153465004" displayName="Education about overdosing" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+<!--               information that vendors mapped:                    <code code="422037009" displayName="Provider medication administration instructions" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>--> 
                                     <text> Do not overtake</text>
                                     <statusCode code="completed"/>
                                 </act>
@@ -1537,7 +1539,7 @@
                             <entryRelationship typeCode="RSON">
                                 <act classCode="ACT" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.22.4.122" />
-                                    <id root="3700b3b0-fbed-11e2-b778-0800200c9a66" />
+                                    <id root="f4dce790-8328-11db-9fe1-0800200c9a44" />
                                     <!-- The code is nulled to "NP" Not Present" -->
                                     <code nullFlavor="NP" />
                                     <statusCode code="completed" />
@@ -1731,7 +1733,7 @@
                             <!-- ** Immunization activity ** -->
                             <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
                             <templateId root="2.16.840.1.113883.10.20.22.4.52" extension="2015-08-01"/>
-                            <id root="e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"/>
+                            <id root="8d5942f9-5413-4486-af89-dcc5603dbec7"/>
                             <text>
                                 <reference value="#immun2"/>
                             </text>
@@ -1936,9 +1938,6 @@
                     <!-- Human-readable: not updated                     -->
                     <text>
                         <table>
-								col 1: Result Organizer detail, containing the ordered test, date/time
-								col 2: the name and result of the items that are resulted
-								col 3: additional result details, such as ranges, interpretations, comments
                             <colgroup>
                                 <col width="20%"/>
                                 <col width="40%"/>
